@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bce361b2fb642b56f02c7f17713c0baf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bce361b2fb642b56f02c7f17713c0baf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bce361b2fb642b56f02c7f17713c0baf = L.map(
+                "map_bce361b2fb642b56f02c7f17713c0baf",
+                {
+                    center: [48.7, 19.6],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7e150a932591da9b8c2a5f81241aec2b = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+            var marker_fbb88bbe7ab5c37bac8f52159034919c = L.marker(
+                [48.757876577, 21.697303326],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_2832ab0b67574ecf1936305f79bfce98 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_fbb88bbe7ab5c37bac8f52159034919c.setIcon(custom_icon_2832ab0b67574ecf1936305f79bfce98);
+        
+    
+        var popup_92031d4af125cafdd0aef0134b57b031 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2b7c0495fc75ea688cf363a8e50ce4b5 = $(`<div id="html_2b7c0495fc75ea688cf363a8e50ce4b5" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M5379</h4>     <p>     Názov: 79_011 Most cez potok pred obcou Parchovany <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 10.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M5379_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_92031d4af125cafdd0aef0134b57b031.setContent(html_2b7c0495fc75ea688cf363a8e50ce4b5);
+            
+        
+
+        marker_fbb88bbe7ab5c37bac8f52159034919c.bindPopup(popup_92031d4af125cafdd0aef0134b57b031)
+        ;
+
+        
+    
+    
+            var marker_53b642126ecd8aac71ba32f97dbd615f = L.marker(
+                [48.839108417, 20.627863515],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_6eed6e0d00c899e0c4656dcb15025e0c = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_53b642126ecd8aac71ba32f97dbd615f.setIcon(custom_icon_6eed6e0d00c899e0c4656dcb15025e0c);
+        
+    
+        var popup_305f8be0f1428a79697fb6b7e4a13801 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_76668b5bb57af63a919548e19eda5e38 = $(`<div id="html_76668b5bb57af63a919548e19eda5e38" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6229</h4>     <p>     Názov: Most cez rieku Hnilec v obci Nálepkovo <br>     Okres: Gelnica <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 17.8m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6229_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_305f8be0f1428a79697fb6b7e4a13801.setContent(html_76668b5bb57af63a919548e19eda5e38);
+            
+        
+
+        marker_53b642126ecd8aac71ba32f97dbd615f.bindPopup(popup_305f8be0f1428a79697fb6b7e4a13801)
+        ;
+
+        
+    
+    
+            var marker_c6ba8a5156037b79863a1c0e21faedda = L.marker(
+                [48.563049339, 21.65666687],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_aa33c82ba12229d218d05e69cf39bbe3 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_c6ba8a5156037b79863a1c0e21faedda.setIcon(custom_icon_aa33c82ba12229d218d05e69cf39bbe3);
+        
+    
+        var popup_bf8f4af655556a5d22ddaa8a6eb980b0 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_174582445c19db654eefce752b804a28 = $(`<div id="html_174582445c19db654eefce752b804a28" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M3896</h4>     <p>     Názov: Cestný nadjazd nad železničnou traťou <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 49.8m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M3896_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_bf8f4af655556a5d22ddaa8a6eb980b0.setContent(html_174582445c19db654eefce752b804a28);
+            
+        
+
+        marker_c6ba8a5156037b79863a1c0e21faedda.bindPopup(popup_bf8f4af655556a5d22ddaa8a6eb980b0)
+        ;
+
+        
+    
+    
+            var marker_a51585cd6258d6183ccec1418f998b00 = L.marker(
+                [48.557260497, 21.668611514],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_b31e20e4da9f0951e4679977cca290f9 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_a51585cd6258d6183ccec1418f998b00.setIcon(custom_icon_b31e20e4da9f0951e4679977cca290f9);
+        
+    
+        var popup_b7e0bcdd3b0009d401dd5981dc8b29ff = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ca87287c9f69d4fd94de1aa47f54b66d = $(`<div id="html_ca87287c9f69d4fd94de1aa47f54b66d" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1327</h4>     <p>     Názov: Most cez potok Helmec <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 15.3m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1327_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_b7e0bcdd3b0009d401dd5981dc8b29ff.setContent(html_ca87287c9f69d4fd94de1aa47f54b66d);
+            
+        
+
+        marker_a51585cd6258d6183ccec1418f998b00.bindPopup(popup_b7e0bcdd3b0009d401dd5981dc8b29ff)
+        ;
+
+        
+    
+    
+            var marker_d1514659a5718964358cdfca758a291e = L.marker(
+                [48.570076423, 21.973821686],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_5ac7c3a63fc8c75ce5cf2742ff1b0b6e = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_d1514659a5718964358cdfca758a291e.setIcon(custom_icon_5ac7c3a63fc8c75ce5cf2742ff1b0b6e);
+        
+    
+        var popup_7ebf5dbdef10ecc21e6d9060280cbcbd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_40017b2661855364765ecaaf42d8ea0a = $(`<div id="html_40017b2661855364765ecaaf42d8ea0a" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1683</h4>     <p>     Názov: Most cez inundačný kanál pred obcou Vojany <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 57.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1683_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_7ebf5dbdef10ecc21e6d9060280cbcbd.setContent(html_40017b2661855364765ecaaf42d8ea0a);
+            
+        
+
+        marker_d1514659a5718964358cdfca758a291e.bindPopup(popup_7ebf5dbdef10ecc21e6d9060280cbcbd)
+        ;
+
+        
+    
+    
+            var marker_8e27468ba5f753751f622597ee5e1d89 = L.marker(
+                [48.569904059, 21.981359643],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_b73ba10645965efb561deec28c8b3bec = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_8e27468ba5f753751f622597ee5e1d89.setIcon(custom_icon_b73ba10645965efb561deec28c8b3bec);
+        
+    
+        var popup_dd5c73176f803dfee2c080714aeac7fd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a5d8618aaf444f54aaf1e3a6c3bfc7b9 = $(`<div id="html_a5d8618aaf444f54aaf1e3a6c3bfc7b9" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1510</h4>     <p>     Názov: Most cez rieku Laborec pred obcou Vojany <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 126.54m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1510_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_dd5c73176f803dfee2c080714aeac7fd.setContent(html_a5d8618aaf444f54aaf1e3a6c3bfc7b9);
+            
+        
+
+        marker_8e27468ba5f753751f622597ee5e1d89.bindPopup(popup_dd5c73176f803dfee2c080714aeac7fd)
+        ;
+
+        
+    
+    
+            var marker_48b76faa0080d2cff4a95c5f7e71959c = L.marker(
+                [48.559274147, 22.002019565],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_893d7a9d6f2b93a45bce18b259a797f3 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_48b76faa0080d2cff4a95c5f7e71959c.setIcon(custom_icon_893d7a9d6f2b93a45bce18b259a797f3);
+        
+    
+        var popup_736ae90dcea800b6a5e2dfdb526019c9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4bf0fae9c410e1733f98e957d99f587c = $(`<div id="html_4bf0fae9c410e1733f98e957d99f587c" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M3088</h4>     <p>     Názov: Most cez železničné vlečky za obcou Vojany <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 69.58m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M3088_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_736ae90dcea800b6a5e2dfdb526019c9.setContent(html_4bf0fae9c410e1733f98e957d99f587c);
+            
+        
+
+        marker_48b76faa0080d2cff4a95c5f7e71959c.bindPopup(popup_736ae90dcea800b6a5e2dfdb526019c9)
+        ;
+
+        
+    
+    
+            var marker_36a8a4b08d3ca3ac9ceed4f38aabf04e = L.marker(
+                [48.557458261, 22.043442596],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_1b7b52c1d6c0294678c63ede45ad5c8f = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_36a8a4b08d3ca3ac9ceed4f38aabf04e.setIcon(custom_icon_1b7b52c1d6c0294678c63ede45ad5c8f);
+        
+    
+        var popup_dee41bf65fb70f529626319c624388c6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7f8245ccd47f86904a7de99e39dcb36b = $(`<div id="html_7f8245ccd47f86904a7de99e39dcb36b" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6042</h4>     <p>     Názov: Most pred mestom Veľké Kapušany <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 13.96m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6042_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_dee41bf65fb70f529626319c624388c6.setContent(html_7f8245ccd47f86904a7de99e39dcb36b);
+            
+        
+
+        marker_36a8a4b08d3ca3ac9ceed4f38aabf04e.bindPopup(popup_dee41bf65fb70f529626319c624388c6)
+        ;
+
+        
+    
+    
+            var marker_99fdbceec2ca8bf8b33680d8e03ddf89 = L.marker(
+                [48.580595779, 22.099673737],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_b7805a5a2be3359e8782a1284ad98457 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_99fdbceec2ca8bf8b33680d8e03ddf89.setIcon(custom_icon_b7805a5a2be3359e8782a1284ad98457);
+        
+    
+        var popup_84531a5a8fd53eef30f59e0818ac6a27 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d7da183ce0c1245c69d4abe343b44631 = $(`<div id="html_d7da183ce0c1245c69d4abe343b44631" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1027</h4>     <p>     Názov: Most cez rameno jazera Ortov za os. Ortov <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 13.2m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1027_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_84531a5a8fd53eef30f59e0818ac6a27.setContent(html_d7da183ce0c1245c69d4abe343b44631);
+            
+        
+
+        marker_99fdbceec2ca8bf8b33680d8e03ddf89.bindPopup(popup_84531a5a8fd53eef30f59e0818ac6a27)
+        ;
+
+        
+    
+    
+            var marker_4655ca7544dbfe69649ebf2b87ba5d28 = L.marker(
+                [48.784600003, 22.248134777],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_da20bcf14f2f839572e68d764d0b9ea5 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_4655ca7544dbfe69649ebf2b87ba5d28.setIcon(custom_icon_da20bcf14f2f839572e68d764d0b9ea5);
+        
+    
+        var popup_5a9c4d975dbb6886892f15edc8d1c4c4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_610f8bffaecdda7815300254aef280a0 = $(`<div id="html_610f8bffaecdda7815300254aef280a0" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M7232</h4>     <p>     Názov: Most cez potok Syrový za obcou Choňkovce <br>     Okres: Sobrance <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 13.3m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M7232_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_5a9c4d975dbb6886892f15edc8d1c4c4.setContent(html_610f8bffaecdda7815300254aef280a0);
+            
+        
+
+        marker_4655ca7544dbfe69649ebf2b87ba5d28.bindPopup(popup_5a9c4d975dbb6886892f15edc8d1c4c4)
+        ;
+
+        
+    
+    
+            var marker_5e763c65c4e502087f234940f46dd813 = L.marker(
+                [48.760147182, 21.919972718],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_f031614002798a6eae15a1a916423f92 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_5e763c65c4e502087f234940f46dd813.setIcon(custom_icon_f031614002798a6eae15a1a916423f92);
+        
+    
+        var popup_2d27ad543207a851a12e49659b38c939 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_27c205c30d942b4435d0ba3c13b1cad0 = $(`<div id="html_27c205c30d942b4435d0ba3c13b1cad0" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1608</h4>     <p>     Názov: Most cez rieku Laborec v km 0,504 <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 53.95m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1608_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_2d27ad543207a851a12e49659b38c939.setContent(html_27c205c30d942b4435d0ba3c13b1cad0);
+            
+        
+
+        marker_5e763c65c4e502087f234940f46dd813.bindPopup(popup_2d27ad543207a851a12e49659b38c939)
+        ;
+
+        
+    
+    
+            var marker_1359c1a60c92f038c865665fd7e2e82b = L.marker(
+                [48.789028749, 21.946126892],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_166d4a091308360a8851131e6aaa88cb = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_1359c1a60c92f038c865665fd7e2e82b.setIcon(custom_icon_166d4a091308360a8851131e6aaa88cb);
+        
+    
+        var popup_9150b4cd9a647eb57fe25333d18b572f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a4c0bec79b17d3ef596ba1fa6e1f83a0 = $(`<div id="html_a4c0bec79b17d3ef596ba1fa6e1f83a0" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6860</h4>     <p>     Názov: Most cez nápustný kanál do Zempl. Šíravy <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 22.94m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6860_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_9150b4cd9a647eb57fe25333d18b572f.setContent(html_a4c0bec79b17d3ef596ba1fa6e1f83a0);
+            
+        
+
+        marker_1359c1a60c92f038c865665fd7e2e82b.bindPopup(popup_9150b4cd9a647eb57fe25333d18b572f)
+        ;
+
+        
+    
+    
+            var marker_26eefec131d9ba9a50de38d751827874 = L.marker(
+                [48.789078905, 21.945979434],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_12b32ffe7610a4a44963c899ed68d650 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_26eefec131d9ba9a50de38d751827874.setIcon(custom_icon_12b32ffe7610a4a44963c899ed68d650);
+        
+    
+        var popup_3275a4cbbe6200012e07cae24865b870 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_26387c81cd9114d66cca6d42a41ea3ef = $(`<div id="html_26387c81cd9114d66cca6d42a41ea3ef" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6554</h4>     <p>     Názov: Most cez nápustný kanál na Zempl. Šírave - ľavý pás <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 45.42m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6554_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_3275a4cbbe6200012e07cae24865b870.setContent(html_26387c81cd9114d66cca6d42a41ea3ef);
+            
+        
+
+        marker_26eefec131d9ba9a50de38d751827874.bindPopup(popup_3275a4cbbe6200012e07cae24865b870)
+        ;
+
+        
+    
+    
+            var marker_0ac1353481c7c141cde6590299e7bf92 = L.marker(
+                [48.677752118, 20.355187192],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_62af7500fdca5a4261bfeef9e68e1129 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_0ac1353481c7c141cde6590299e7bf92.setIcon(custom_icon_62af7500fdca5a4261bfeef9e68e1129);
+        
+    
+        var popup_97e8215dc9750935ddc1d10ad3fec268 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7ccd3bc912d394888c6a00a683b9b101 = $(`<div id="html_7ccd3bc912d394888c6a00a683b9b101" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M7671</h4>     <p>     Názov: Most cez potok Štítnicky za obcou Roštár <br>     Okres: Rožňava <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 10.9m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M7671_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_97e8215dc9750935ddc1d10ad3fec268.setContent(html_7ccd3bc912d394888c6a00a683b9b101);
+            
+        
+
+        marker_0ac1353481c7c141cde6590299e7bf92.bindPopup(popup_97e8215dc9750935ddc1d10ad3fec268)
+        ;
+
+        
+    
+    
+            var marker_46d99f8c7f4a091fd1739982cc3001a3 = L.marker(
+                [48.933057728, 20.916788866],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_a643ecbd2c2c0bab4130a340c8672a95 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_46d99f8c7f4a091fd1739982cc3001a3.setIcon(custom_icon_a643ecbd2c2c0bab4130a340c8672a95);
+        
+    
+        var popup_f3bc8187799e5638f3c13af665a3d212 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_901fce9b5b0d83daa8e32a5350d8b74d = $(`<div id="html_901fce9b5b0d83daa8e32a5350d8b74d" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M5262</h4>     <p>     Názov: Most cez Hrišovský potok za obcou Richnava <br>     Okres: Gelnica <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 13.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M5262_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_f3bc8187799e5638f3c13af665a3d212.setContent(html_901fce9b5b0d83daa8e32a5350d8b74d);
+            
+        
+
+        marker_46d99f8c7f4a091fd1739982cc3001a3.bindPopup(popup_f3bc8187799e5638f3c13af665a3d212)
+        ;
+
+        
+    
+    
+            var marker_47c17889f0d11f9d3a9c30ae0a34228e = L.marker(
+                [48.766977295, 21.845745182],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_be61db0ded0b4cbfcc8f0d2e605c6074 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_47c17889f0d11f9d3a9c30ae0a34228e.setIcon(custom_icon_be61db0ded0b4cbfcc8f0d2e605c6074);
+        
+    
+        var popup_1e1ac33937c3dcd116ce33443cc8e8f3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_27b9d2c2a377dc955221394331d865cf = $(`<div id="html_27b9d2c2a377dc955221394331d865cf" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M7093</h4>     <p>     Názov: Most cez potok Duša v obci Topoľany <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 14.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M7093_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_1e1ac33937c3dcd116ce33443cc8e8f3.setContent(html_27b9d2c2a377dc955221394331d865cf);
+            
+        
+
+        marker_47c17889f0d11f9d3a9c30ae0a34228e.bindPopup(popup_1e1ac33937c3dcd116ce33443cc8e8f3)
+        ;
+
+        
+    
+    
+            var marker_4fde8cddf323b94133bd2788ae323449 = L.marker(
+                [48.518538749, 20.38031516],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_368f21bf4e6e29a6cd87fd0c5a508987 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_4fde8cddf323b94133bd2788ae323449.setIcon(custom_icon_368f21bf4e6e29a6cd87fd0c5a508987);
+        
+    
+        var popup_4cbf998e12c1962fb1b5cc5210b7904d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a8d163f080af6de89e2a7ffef1c50297 = $(`<div id="html_a8d163f080af6de89e2a7ffef1c50297" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6446</h4>     <p>     Názov: Most cez rieku pri obci Bohúňovo <br>     Okres: Rožňava <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 24.25m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6446_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_4cbf998e12c1962fb1b5cc5210b7904d.setContent(html_a8d163f080af6de89e2a7ffef1c50297);
+            
+        
+
+        marker_4fde8cddf323b94133bd2788ae323449.bindPopup(popup_4cbf998e12c1962fb1b5cc5210b7904d)
+        ;
+
+        
+    
+    
+            var marker_292048fa4c426367886b2165b1d5256c = L.marker(
+                [48.593719968, 20.894112133],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_d629edf7c9ef5dd0ebfee7d9758b3c63 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_292048fa4c426367886b2165b1d5256c.setIcon(custom_icon_d629edf7c9ef5dd0ebfee7d9758b3c63);
+        
+    
+        var popup_f2cc8080c82b48979033161d8093dbc3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_280079c7e44532196a3b41cf56ef2325 = $(`<div id="html_280079c7e44532196a3b41cf56ef2325" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1439</h4>     <p>     Názov: Most cez Bodvu za obcou Turňa nad Bodvou <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 17.6m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1439_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_f2cc8080c82b48979033161d8093dbc3.setContent(html_280079c7e44532196a3b41cf56ef2325);
+            
+        
+
+        marker_292048fa4c426367886b2165b1d5256c.bindPopup(popup_f2cc8080c82b48979033161d8093dbc3)
+        ;
+
+        
+    
+    
+            var marker_7c0128596a6d77721631d09dab7946f5 = L.marker(
+                [48.582098981, 20.93542196],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_0bb454ac9f2d1d92149555c014bce0fa = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_7c0128596a6d77721631d09dab7946f5.setIcon(custom_icon_0bb454ac9f2d1d92149555c014bce0fa);
+        
+    
+        var popup_5778e50155d1b88ae86180b07db054a8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a6ca0055ead41936b91124a540f76751 = $(`<div id="html_a6ca0055ead41936b91124a540f76751" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M366</h4>     <p>     Názov: Most cez rieku Bodvu pred obcou Žarnov <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 17.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M366_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_5778e50155d1b88ae86180b07db054a8.setContent(html_a6ca0055ead41936b91124a540f76751);
+            
+        
+
+        marker_7c0128596a6d77721631d09dab7946f5.bindPopup(popup_5778e50155d1b88ae86180b07db054a8)
+        ;
+
+        
+    
+    
+            var marker_6963236278857e9cd28002a38801beae = L.marker(
+                [48.579523798, 21.049571948],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_a0f301beee24eeb72de41155138a3328 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_6963236278857e9cd28002a38801beae.setIcon(custom_icon_a0f301beee24eeb72de41155138a3328);
+        
+    
+        var popup_c0a5a7ab01ebb7fb515fc29f6a4e578a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b746e53894788d1897f384654dcecf4f = $(`<div id="html_b746e53894788d1897f384654dcecf4f" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M3219</h4>     <p>     Názov: Most cez potok Čečanka za obcou Mokrance <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 11.1m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M3219_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_c0a5a7ab01ebb7fb515fc29f6a4e578a.setContent(html_b746e53894788d1897f384654dcecf4f);
+            
+        
+
+        marker_6963236278857e9cd28002a38801beae.bindPopup(popup_c0a5a7ab01ebb7fb515fc29f6a4e578a)
+        ;
+
+        
+    
+    
+            var marker_f6820816844fdec612019d2bcac4bcdc = L.marker(
+                [48.546900817, 21.081204476],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_2bf40471b07e35ffe864a0690296f465 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_f6820816844fdec612019d2bcac4bcdc.setIcon(custom_icon_2bf40471b07e35ffe864a0690296f465);
+        
+    
+        var popup_b7d345516c5cbf9868af237f752163b5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8e37d8cd8326604de6f1bf87873b76c7 = $(`<div id="html_8e37d8cd8326604de6f1bf87873b76c7" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M2822</h4>     <p>     Názov: Most cez kanál Konotope pred obcou Buzica <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 20.74m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M2822_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_b7d345516c5cbf9868af237f752163b5.setContent(html_8e37d8cd8326604de6f1bf87873b76c7);
+            
+        
+
+        marker_f6820816844fdec612019d2bcac4bcdc.bindPopup(popup_b7d345516c5cbf9868af237f752163b5)
+        ;
+
+        
+    
+    
+            var marker_0b0ff7ca148695d965e578263cdbc82f = L.marker(
+                [48.700848599, 21.6547222],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_b0a8359bc2e50352e4c6dc1f0250defc = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_0b0ff7ca148695d965e578263cdbc82f.setIcon(custom_icon_b0a8359bc2e50352e4c6dc1f0250defc);
+        
+    
+        var popup_eb49bdedd681d6f2969ffd31b77e8056 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_410d01c124ec7cf6262c3948ec370d30 = $(`<div id="html_410d01c124ec7cf6262c3948ec370d30" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6219</h4>     <p>     Názov: Most cez potok Temavka v obci Sečovce <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 27.6m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6219_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_eb49bdedd681d6f2969ffd31b77e8056.setContent(html_410d01c124ec7cf6262c3948ec370d30);
+            
+        
+
+        marker_0b0ff7ca148695d965e578263cdbc82f.bindPopup(popup_eb49bdedd681d6f2969ffd31b77e8056)
+        ;
+
+        
+    
+    
+            var marker_a148e5febc1c9ecbeb18e1a2e267742b = L.marker(
+                [48.729655583, 21.714484485],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_a9ee0ff5b7a9289c9437dbb45a6cdf0a = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_a148e5febc1c9ecbeb18e1a2e267742b.setIcon(custom_icon_a9ee0ff5b7a9289c9437dbb45a6cdf0a);
+        
+    
+        var popup_b00439f17aa5d8cdf334291bf9f4c1d2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e7d742b95050269e24acacb930fec291 = $(`<div id="html_e7d742b95050269e24acacb930fec291" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6936</h4>     <p>     Názov: Most cez kanál Mano pred obcou Dvorianky <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 11.2m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6936_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_b00439f17aa5d8cdf334291bf9f4c1d2.setContent(html_e7d742b95050269e24acacb930fec291);
+            
+        
+
+        marker_a148e5febc1c9ecbeb18e1a2e267742b.bindPopup(popup_b00439f17aa5d8cdf334291bf9f4c1d2)
+        ;
+
+        
+    
+    
+            var marker_cbee4c37176ef7c20e0b3b4f9c7b0ee8 = L.marker(
+                [48.793905981, 21.900719962],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_4be77f4758c5154d092c350abe3deef1 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_cbee4c37176ef7c20e0b3b4f9c7b0ee8.setIcon(custom_icon_4be77f4758c5154d092c350abe3deef1);
+        
+    
+        var popup_8d44a6fcd5f76bdf698e5b1c747b9c6c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_88d1d9d1e1e0e2ed2958cb1323776f63 = $(`<div id="html_88d1d9d1e1e0e2ed2958cb1323776f63" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1687</h4>     <p>     Názov: Most cez nápustný kanál pred obcou Zbudza <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 56.5m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1687_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_8d44a6fcd5f76bdf698e5b1c747b9c6c.setContent(html_88d1d9d1e1e0e2ed2958cb1323776f63);
+            
+        
+
+        marker_cbee4c37176ef7c20e0b3b4f9c7b0ee8.bindPopup(popup_8d44a6fcd5f76bdf698e5b1c747b9c6c)
+        ;
+
+        
+    
+    
+            var marker_7931bb0709cb58203383c18534ae7cb1 = L.marker(
+                [48.813280639, 21.315929131],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_ea0b1f70bbce3c06fa3d44bd7880a7e2 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_7931bb0709cb58203383c18534ae7cb1.setIcon(custom_icon_ea0b1f70bbce3c06fa3d44bd7880a7e2);
+        
+    
+        var popup_a80b9d7add1cad09dce3ddbbff5a52b7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3a9eabe0a357be6a9cc65d1add6c1577 = $(`<div id="html_3a9eabe0a357be6a9cc65d1add6c1577" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M4047</h4>     <p>     Názov: Most cez rieku Torysu v obci Ploské <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 56.4m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M4047_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_a80b9d7add1cad09dce3ddbbff5a52b7.setContent(html_3a9eabe0a357be6a9cc65d1add6c1577);
+            
+        
+
+        marker_7931bb0709cb58203383c18534ae7cb1.bindPopup(popup_a80b9d7add1cad09dce3ddbbff5a52b7)
+        ;
+
+        
+    
+    
+            var marker_1dcd8e7c0fee5c8ba2fe6a3441844acd = L.marker(
+                [48.781621274, 21.314422356],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_f13c71441a95bd645128321863eb8cd7 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_1dcd8e7c0fee5c8ba2fe6a3441844acd.setIcon(custom_icon_f13c71441a95bd645128321863eb8cd7);
+        
+    
+        var popup_6812b2860fd013b2a674bd35ee5126d1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_77a381df3743e01e7b8e421ad788ed28 = $(`<div id="html_77a381df3743e01e7b8e421ad788ed28" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M6874</h4>     <p>     Názov: Most cez rieku Torysu pri obci Vajkovce <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 66.3m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M6874_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_6812b2860fd013b2a674bd35ee5126d1.setContent(html_77a381df3743e01e7b8e421ad788ed28);
+            
+        
+
+        marker_1dcd8e7c0fee5c8ba2fe6a3441844acd.bindPopup(popup_6812b2860fd013b2a674bd35ee5126d1)
+        ;
+
+        
+    
+    
+            var marker_069df8be43d5f1858db4ca8fdf5c1646 = L.marker(
+                [48.868821572, 20.962027928],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_f9f1eb6b9c57e0b10e2613417b9e97f0 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_069df8be43d5f1858db4ca8fdf5c1646.setIcon(custom_icon_f9f1eb6b9c57e0b10e2613417b9e97f0);
+        
+    
+        var popup_1daca4857a67f504ddfd3d0a2f60afae = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_dc6dc3f2a44006f9fede55c532171f88 = $(`<div id="html_dc6dc3f2a44006f9fede55c532171f88" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M4444</h4>     <p>     Názov: Most cez rieku Hnilec v osade Maria Huta <br>     Okres: Gelnica <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 37.6m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M4444_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_1daca4857a67f504ddfd3d0a2f60afae.setContent(html_dc6dc3f2a44006f9fede55c532171f88);
+            
+        
+
+        marker_069df8be43d5f1858db4ca8fdf5c1646.bindPopup(popup_1daca4857a67f504ddfd3d0a2f60afae)
+        ;
+
+        
+    
+    
+            var marker_653ff908043e33cd0f6ba09ebde2f9ec = L.marker(
+                [48.847758566, 20.61184467],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_f7786e9489f1f4875525b4e8edda2166 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_653ff908043e33cd0f6ba09ebde2f9ec.setIcon(custom_icon_f7786e9489f1f4875525b4e8edda2166);
+        
+    
+        var popup_22a1f06607139a088373985de81ef4cc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d2eccfe4cfa1046c4d51d32ee218508c = $(`<div id="html_d2eccfe4cfa1046c4d51d32ee218508c" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M3306</h4>     <p>     Názov: Most cez Železný potok za obcou Nálepkovo <br>     Okres: Gelnica <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 11.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M3306_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_22a1f06607139a088373985de81ef4cc.setContent(html_d2eccfe4cfa1046c4d51d32ee218508c);
+            
+        
+
+        marker_653ff908043e33cd0f6ba09ebde2f9ec.bindPopup(popup_22a1f06607139a088373985de81ef4cc)
+        ;
+
+        
+    
+    
+            var marker_85f57ae4c65ac59307f9c770deb13299 = L.marker(
+                [48.861166621, 21.098032527],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_ff3801352e9c0700de7eed2fa4b36216 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_85f57ae4c65ac59307f9c770deb13299.setIcon(custom_icon_ff3801352e9c0700de7eed2fa4b36216);
+        
+    
+        var popup_b61f7d0580748118df925d48e63628da = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_784796091c92933f09be7a000638c127 = $(`<div id="html_784796091c92933f09be7a000638c127" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M7266</h4>     <p>     Názov: Most na priehrade Ružín <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 87.86m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M7266_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_b61f7d0580748118df925d48e63628da.setContent(html_784796091c92933f09be7a000638c127);
+            
+        
+
+        marker_85f57ae4c65ac59307f9c770deb13299.bindPopup(popup_b61f7d0580748118df925d48e63628da)
+        ;
+
+        
+    
+    
+            var marker_8738bff724caf0433efc3274ddd2b84a = L.marker(
+                [48.64795757, 21.003388378],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_0b36ae0e539e0b4b0b1e98e09d229076 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_8738bff724caf0433efc3274ddd2b84a.setIcon(custom_icon_0b36ae0e539e0b4b0b1e98e09d229076);
+        
+    
+        var popup_19f0235e7a3e8a00a6e25c05fcf7102b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c863079400cc3045e168d55e7cfb99e3 = $(`<div id="html_c863079400cc3045e168d55e7cfb99e3" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M2575</h4>     <p>     Názov: Most cez rieku Bodva pred obcou Debraď <br>     Okres: Košice - okolie <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 16.3m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M2575_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_19f0235e7a3e8a00a6e25c05fcf7102b.setContent(html_c863079400cc3045e168d55e7cfb99e3);
+            
+        
+
+        marker_8738bff724caf0433efc3274ddd2b84a.bindPopup(popup_19f0235e7a3e8a00a6e25c05fcf7102b)
+        ;
+
+        
+    
+    
+            var marker_8c8c9b6117221838899d3f2fc1de683d = L.marker(
+                [48.509471894, 21.614846509],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_359dcb03d5ccbe128798816d1ff852d6 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_8c8c9b6117221838899d3f2fc1de683d.setIcon(custom_icon_359dcb03d5ccbe128798816d1ff852d6);
+        
+    
+        var popup_021a28beef2b163cd9cdeb654f140bf6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a4d6dffc6e10ec6255a94e790a6e39ca = $(`<div id="html_a4d6dffc6e10ec6255a94e790a6e39ca" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M2345</h4>     <p>     Názov: Most cez potok Roňva za obcou Michaľany <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 11.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M2345_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_021a28beef2b163cd9cdeb654f140bf6.setContent(html_a4d6dffc6e10ec6255a94e790a6e39ca);
+            
+        
+
+        marker_8c8c9b6117221838899d3f2fc1de683d.bindPopup(popup_021a28beef2b163cd9cdeb654f140bf6)
+        ;
+
+        
+    
+    
+            var marker_63ab0c1d2989adbd5a2330f885aa469e = L.marker(
+                [48.578677773, 21.576882573],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_591c6d59eb2ff8a7f0fd56912719acd4 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_63ab0c1d2989adbd5a2330f885aa469e.setIcon(custom_icon_591c6d59eb2ff8a7f0fd56912719acd4);
+        
+    
+        var popup_249d4162dbf9f4d09f1e08ad3636eeb5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4bd83671270b197e5a2fd7f206233b13 = $(`<div id="html_4bd83671270b197e5a2fd7f206233b13" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M5712</h4>     <p>     Názov: Most cez rieku Roňva v obci Kuzmice <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 13.36m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M5712_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_249d4162dbf9f4d09f1e08ad3636eeb5.setContent(html_4bd83671270b197e5a2fd7f206233b13);
+            
+        
+
+        marker_63ab0c1d2989adbd5a2330f885aa469e.bindPopup(popup_249d4162dbf9f4d09f1e08ad3636eeb5)
+        ;
+
+        
+    
+    
+            var marker_61e212f215dbdfcfea9c51fe0ba9987f = L.marker(
+                [48.604700858, 22.157007417],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_00272c78fa9c8c4669c1ed785b1f426a = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_61e212f215dbdfcfea9c51fe0ba9987f.setIcon(custom_icon_00272c78fa9c8c4669c1ed785b1f426a);
+        
+    
+        var popup_6aa1a56b88d7ad5be042210dd3c586f2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4b3a0c1dda895206b4fe582bab8328ce = $(`<div id="html_4b3a0c1dda895206b4fe582bab8328ce" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M5734</h4>     <p>     Názov: Most cez rieku Uh v obci Lekárovce <br>     Okres: Sobrance <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 93.8m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M5734_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_6aa1a56b88d7ad5be042210dd3c586f2.setContent(html_4b3a0c1dda895206b4fe582bab8328ce);
+            
+        
+
+        marker_61e212f215dbdfcfea9c51fe0ba9987f.bindPopup(popup_6aa1a56b88d7ad5be042210dd3c586f2)
+        ;
+
+        
+    
+    
+            var marker_78fff86eaa2e257e00df1f9907a039ca = L.marker(
+                [48.682312848, 22.198970927],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_2164b3a914a8560ae370d1a79e652367 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_78fff86eaa2e257e00df1f9907a039ca.setIcon(custom_icon_2164b3a914a8560ae370d1a79e652367);
+        
+    
+        var popup_da555c3335b0573b3c011f5222431bae = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_02af43ba111b9e3a4a3ab72389c68a87 = $(`<div id="html_02af43ba111b9e3a4a3ab72389c68a87" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M5753</h4>     <p>     Názov: Most cez záchytný kanál pred obcou Kristy <br>     Okres: Sobrance <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 36.18m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M5753_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_da555c3335b0573b3c011f5222431bae.setContent(html_02af43ba111b9e3a4a3ab72389c68a87);
+            
+        
+
+        marker_78fff86eaa2e257e00df1f9907a039ca.bindPopup(popup_da555c3335b0573b3c011f5222431bae)
+        ;
+
+        
+    
+    
+            var marker_259a54bd6908d047d307bd3c6e996523 = L.marker(
+                [48.71978795, 22.168522736],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_598888fc2c49b9a20592acdb850dc644 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_259a54bd6908d047d307bd3c6e996523.setIcon(custom_icon_598888fc2c49b9a20592acdb850dc644);
+        
+    
+        var popup_c7a3351286c15b3b31fc12e278601a11 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_356dbc56178428e53bbb9548d50da092 = $(`<div id="html_356dbc56178428e53bbb9548d50da092" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M2906</h4>     <p>     Názov: Most cez Sobranecký potok pred obcou Ostrov <br>     Okres: Sobrance <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 15.0m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M2906_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_c7a3351286c15b3b31fc12e278601a11.setContent(html_356dbc56178428e53bbb9548d50da092);
+            
+        
+
+        marker_259a54bd6908d047d307bd3c6e996523.bindPopup(popup_c7a3351286c15b3b31fc12e278601a11)
+        ;
+
+        
+    
+    
+            var marker_29accd9cb73dce67574918d19da9aed7 = L.marker(
+                [48.538735142, 22.040764748],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_c3ed80af3cfcdfe1d12203dcf1134efb = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_29accd9cb73dce67574918d19da9aed7.setIcon(custom_icon_c3ed80af3cfcdfe1d12203dcf1134efb);
+        
+    
+        var popup_cb895ef55fd28f1ac1b27d8617a553eb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fb11440c1f762dc2b58754f4c5e6a0a5 = $(`<div id="html_fb11440c1f762dc2b58754f4c5e6a0a5" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M4923</h4>     <p>     Názov: Most cez potok Udoč pred obcou Čičarovce <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 12.37m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M4923_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_cb895ef55fd28f1ac1b27d8617a553eb.setContent(html_fb11440c1f762dc2b58754f4c5e6a0a5);
+            
+        
+
+        marker_29accd9cb73dce67574918d19da9aed7.bindPopup(popup_cb895ef55fd28f1ac1b27d8617a553eb)
+        ;
+
+        
+    
+    
+            var marker_1799545087578902fc5c3ab76a7efc36 = L.marker(
+                [48.523743958, 21.693828402],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_c81c7ad4876d369fc418435ffe70a6a1 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_1799545087578902fc5c3ab76a7efc36.setIcon(custom_icon_c81c7ad4876d369fc418435ffe70a6a1);
+        
+    
+        var popup_cb20f58407ebb00fce9635c342422279 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8ee573fe2b5c926d430adefe1430689c = $(`<div id="html_8ee573fe2b5c926d430adefe1430689c" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M4957</h4>     <p>     Názov: Most cez potok Chlmec pred obcou Hrčeľ <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 15.8m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M4957_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_cb20f58407ebb00fce9635c342422279.setContent(html_8ee573fe2b5c926d430adefe1430689c);
+            
+        
+
+        marker_1799545087578902fc5c3ab76a7efc36.bindPopup(popup_cb20f58407ebb00fce9635c342422279)
+        ;
+
+        
+    
+    
+            var marker_59ad5b87a7bc8e00bde7a65b30560799 = L.marker(
+                [48.396813046, 21.932453253],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_08ca9c69bab4d5f471c2ce11bc52c1ba = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_59ad5b87a7bc8e00bde7a65b30560799.setIcon(custom_icon_08ca9c69bab4d5f471c2ce11bc52c1ba);
+        
+    
+        var popup_d83794dab1bdca0193ce87ca88d19f68 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_976e5787f30ad832212b1d6b3cf41049 = $(`<div id="html_976e5787f30ad832212b1d6b3cf41049" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M3841</h4>     <p>     Názov: Most cez kanál za obcou Veľký Horeš <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 15.9m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M3841_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_d83794dab1bdca0193ce87ca88d19f68.setContent(html_976e5787f30ad832212b1d6b3cf41049);
+            
+        
+
+        marker_59ad5b87a7bc8e00bde7a65b30560799.bindPopup(popup_d83794dab1bdca0193ce87ca88d19f68)
+        ;
+
+        
+    
+    
+            var marker_8a7373343f26971f9a94ddcd36e28cc2 = L.marker(
+                [48.397779135, 21.925699931],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_cb53e4cbfaa8d8a6d354f1f4297c9502 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_8a7373343f26971f9a94ddcd36e28cc2.setIcon(custom_icon_cb53e4cbfaa8d8a6d354f1f4297c9502);
+        
+    
+        var popup_02a591407dbc25bc6f0fa3634961cbd7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9a622e5b26e7d0702d5253bdf4e81362 = $(`<div id="html_9a622e5b26e7d0702d5253bdf4e81362" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M338</h4>     <p>     Názov: Most cez kanál pred križovatkou s cestou 553024 <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 15.9m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M338_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_02a591407dbc25bc6f0fa3634961cbd7.setContent(html_9a622e5b26e7d0702d5253bdf4e81362);
+            
+        
+
+        marker_8a7373343f26971f9a94ddcd36e28cc2.bindPopup(popup_02a591407dbc25bc6f0fa3634961cbd7)
+        ;
+
+        
+    
+    
+            var marker_457f096d9a95db52539496e5e47fdf4a = L.marker(
+                [48.635651368, 21.71719906],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_b4e785e603dc998ebe2c9b9c15160c40 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_457f096d9a95db52539496e5e47fdf4a.setIcon(custom_icon_b4e785e603dc998ebe2c9b9c15160c40);
+        
+    
+        var popup_c6018a200dd4db035b809f995d265567 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fec818bfa486d5eaa40f64dae25e1b38 = $(`<div id="html_fec818bfa486d5eaa40f64dae25e1b38" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M917</h4>     <p>     Názov: 553047- 001A Most nad železničnou traťou <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 271.23m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M917_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_c6018a200dd4db035b809f995d265567.setContent(html_fec818bfa486d5eaa40f64dae25e1b38);
+            
+        
+
+        marker_457f096d9a95db52539496e5e47fdf4a.bindPopup(popup_c6018a200dd4db035b809f995d265567)
+        ;
+
+        
+    
+    
+            var marker_12c2b6b8ab2edd9361b2644995fd7faa = L.marker(
+                [48.453566211, 21.930206638],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_77825fe8a53137a432fcd878a6970ccb = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_12c2b6b8ab2edd9361b2644995fd7faa.setIcon(custom_icon_77825fe8a53137a432fcd878a6970ccb);
+        
+    
+        var popup_32fab82e61a48a658981d37c8f10fca3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1a1fde0323eb5a343113c1df19a7929d = $(`<div id="html_1a1fde0323eb5a343113c1df19a7929d" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M2940</h4>     <p>     Názov: 554001- 002 Most cez poľný kanál za obcou Vojka <br>     Okres: Trebišov <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 9.85m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M2940_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_32fab82e61a48a658981d37c8f10fca3.setContent(html_1a1fde0323eb5a343113c1df19a7929d);
+            
+        
+
+        marker_12c2b6b8ab2edd9361b2644995fd7faa.bindPopup(popup_32fab82e61a48a658981d37c8f10fca3)
+        ;
+
+        
+    
+    
+            var marker_f38b66d8508fcd103b2677107d40a818 = L.marker(
+                [48.618590184, 21.980320239],
+                {}
+            ).addTo(map_bce361b2fb642b56f02c7f17713c0baf);
+        
+    
+        var custom_icon_9855606055ab8423fa65cddbed0b4d9e = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_f38b66d8508fcd103b2677107d40a818.setIcon(custom_icon_9855606055ab8423fa65cddbed0b4d9e);
+        
+    
+        var popup_e490718c780cebbb0cd3d816b343dbc1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_01308af06d306e6e611b675191d11885 = $(`<div id="html_01308af06d306e6e611b675191d11885" style="width: 100.0%; height: 100.0%;">     <style>         /* Use the Montserrat font for the popup content */         body {             font-family: 'Montserrat', sans-serif;         }     </style>     <h4>Údaje o moste: M1770</h4>     <p>     Názov: 555003- 001 Most cez rieku Laborec za obcou Stretavka <br>     Okres: Michalovce <br>     STS: Veľmi zlý - 6 <br>     Dĺžka: 55.88m      </p>     <img src="https://raw.githubusercontent.com/Medvedku/Assets/main/markers/conditions/M1770_condition.png" alt="Chart" style="width: 300px; height: auto;">     </div>`)[0];
+                popup_e490718c780cebbb0cd3d816b343dbc1.setContent(html_01308af06d306e6e611b675191d11885);
+            
+        
+
+        marker_f38b66d8508fcd103b2677107d40a818.bindPopup(popup_e490718c780cebbb0cd3d816b343dbc1)
+        ;
+
+        
+    
+</script>
+</html>
