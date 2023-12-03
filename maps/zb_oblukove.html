@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa6247eeaa68731cb35d1c03044f7af0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa6247eeaa68731cb35d1c03044f7af0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa6247eeaa68731cb35d1c03044f7af0 = L.map(
+                "map_aa6247eeaa68731cb35d1c03044f7af0",
+                {
+                    center: [48.7, 19.6],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_94570a7766ea951381fd04b1d291e8f7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+            var marker_836bfe5e93587a367b3d4a499f8cfff6 = L.marker(
+                [49.270919894, 19.460322449],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_37c8a2e4f96d356d63d2c6473712c7b2 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_3.svg"});
+        marker_836bfe5e93587a367b3d4a499f8cfff6.setIcon(custom_icon_37c8a2e4f96d356d63d2c6473712c7b2);
+        
+    
+        var popup_75ba1bf07bec64df9679b25b5d209409 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c3b69e51eb4a2d12eae0523ff3f8505b = $(`<div id="html_c3b69e51eb4a2d12eae0523ff3f8505b" style="width: 100.0%; height: 100.0%;">     <h4>ID: M625</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>59_087 Most cez rieku Orava  za obcou Dlhá nad Oravou</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1956 (67 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Dolný Kubín</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>115.21 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta I. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Žilina</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Good</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=49.270919894,19.460322449" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_75ba1bf07bec64df9679b25b5d209409.setContent(html_c3b69e51eb4a2d12eae0523ff3f8505b);
+            
+        
+
+        marker_836bfe5e93587a367b3d4a499f8cfff6.bindPopup(popup_75ba1bf07bec64df9679b25b5d209409)
+        ;
+
+        
+    
+    
+            var marker_35291a462d263cf4ebf3938aa971538f = L.marker(
+                [47.76215808, 18.143206219],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_f804f41bf68632219059204a300fb80c = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_35291a462d263cf4ebf3938aa971538f.setIcon(custom_icon_f804f41bf68632219059204a300fb80c);
+        
+    
+        var popup_d103dbee6792ce89c456f7f73862e9e6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_50a2c00bc3f94893a49bbd9f5c7201df = $(`<div id="html_50a2c00bc3f94893a49bbd9f5c7201df" style="width: 100.0%; height: 100.0%;">     <h4>ID: M1514</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>63_025 Most cez Vážsky Dunaj v Komárne</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1955 (68 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Komárno</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>112.5 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta I. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Nitra</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Very Poor</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=47.76215808,18.143206219" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_d103dbee6792ce89c456f7f73862e9e6.setContent(html_50a2c00bc3f94893a49bbd9f5c7201df);
+            
+        
+
+        marker_35291a462d263cf4ebf3938aa971538f.bindPopup(popup_d103dbee6792ce89c456f7f73862e9e6)
+        ;
+
+        
+    
+    
+            var marker_4536c6bc1a441b097fa653bb3a88ca24 = L.marker(
+                [49.111667358, 20.366347835],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_0052c7e2df7daa3a18c6370004724af3 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_4.svg"});
+        marker_4536c6bc1a441b097fa653bb3a88ca24.setIcon(custom_icon_0052c7e2df7daa3a18c6370004724af3);
+        
+    
+        var popup_4a7d3ea47da6d43c7e24be8d581bed8c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_07d26a89c91d278254a0dbdafad75f20 = $(`<div id="html_07d26a89c91d278254a0dbdafad75f20" style="width: 100.0%; height: 100.0%;">     <h4>ID: M1322</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>67_062 Most cez rieku Poprad za obcou Veľká Lomnica</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1958 (65 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Kežmarok</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>39.0 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta I. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Prešov</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Satisfactory</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=49.111667358,20.366347835" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_4a7d3ea47da6d43c7e24be8d581bed8c.setContent(html_07d26a89c91d278254a0dbdafad75f20);
+            
+        
+
+        marker_4536c6bc1a441b097fa653bb3a88ca24.bindPopup(popup_4a7d3ea47da6d43c7e24be8d581bed8c)
+        ;
+
+        
+    
+    
+            var marker_a34f51e5ab711a06acb767a60419c042 = L.marker(
+                [48.585636051, 17.837342291],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_114c3c7f748629d95068cefceb620901 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_3.svg"});
+        marker_a34f51e5ab711a06acb767a60419c042.setIcon(custom_icon_114c3c7f748629d95068cefceb620901);
+        
+    
+        var popup_2e0de4e96c722b60f621509e2be50321 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_24f0954e5e79d7b89f722da0d4edabc1 = $(`<div id="html_24f0954e5e79d7b89f722da0d4edabc1" style="width: 100.0%; height: 100.0%;">     <h4>ID: M164</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>Most cez Váh v Piešťanoch</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1948 (75 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Piešťany</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>252.4 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta II. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Trnava</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Good</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=48.585636051,17.837342291" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_2e0de4e96c722b60f621509e2be50321.setContent(html_24f0954e5e79d7b89f722da0d4edabc1);
+            
+        
+
+        marker_a34f51e5ab711a06acb767a60419c042.bindPopup(popup_2e0de4e96c722b60f621509e2be50321)
+        ;
+
+        
+    
+    
+            var marker_9138ec9b5bbf111fe0654433edc08bcf = L.marker(
+                [49.12404045, 18.438403914],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_780ab796600209c1b7f5a269cdba0990 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_1.svg"});
+        marker_9138ec9b5bbf111fe0654433edc08bcf.setIcon(custom_icon_780ab796600209c1b7f5a269cdba0990);
+        
+    
+        var popup_eb68172d54565c14a255d99aa6d4642f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_5b1c2f5ea727db8f34dfcce5c8d51274 = $(`<div id="html_5b1c2f5ea727db8f34dfcce5c8d51274" style="width: 100.0%; height: 100.0%;">     <h4>ID: M1185</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>Most v meste Považská Bystrica</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1949 (74 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Považská Bystrica</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>245.7 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta II. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Trenčín</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Flawless</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=49.12404045,18.438403914" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_eb68172d54565c14a255d99aa6d4642f.setContent(html_5b1c2f5ea727db8f34dfcce5c8d51274);
+            
+        
+
+        marker_9138ec9b5bbf111fe0654433edc08bcf.bindPopup(popup_eb68172d54565c14a255d99aa6d4642f)
+        ;
+
+        
+    
+    
+            var marker_0e013436ffa5999d8c9c3adfd9f2be0c = L.marker(
+                [49.123995205, 18.438568973],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_d5d0acbe7cf00303bb2ef7926a29eddb = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_3.svg"});
+        marker_0e013436ffa5999d8c9c3adfd9f2be0c.setIcon(custom_icon_d5d0acbe7cf00303bb2ef7926a29eddb);
+        
+    
+        var popup_9e1479156db8ef1f42de476d8af19cc1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a02c54812a00e525ca5acb727e12b308 = $(`<div id="html_a02c54812a00e525ca5acb727e12b308" style="width: 100.0%; height: 100.0%;">     <h4>ID: M2400</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>Most v meste Považská Bystrica - rozšírenie</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1997 (26 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Považská Bystrica</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>260.36 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta II. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Trenčín</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Good</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=49.123995205,18.438568973" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_9e1479156db8ef1f42de476d8af19cc1.setContent(html_a02c54812a00e525ca5acb727e12b308);
+            
+        
+
+        marker_0e013436ffa5999d8c9c3adfd9f2be0c.bindPopup(popup_9e1479156db8ef1f42de476d8af19cc1)
+        ;
+
+        
+    
+    
+            var marker_b2f4abdd4fdf2cdccf8c2294d09c4449 = L.marker(
+                [49.36036, 19.54893],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_f8fb1292c479da995e80d4de477c491f = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_4.svg"});
+        marker_b2f4abdd4fdf2cdccf8c2294d09c4449.setIcon(custom_icon_f8fb1292c479da995e80d4de477c491f);
+        
+    
+        var popup_724eca557b41b68449a7280eb4d05598 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_091517582954d09df540b994dbce0761 = $(`<div id="html_091517582954d09df540b994dbce0761" style="width: 100.0%; height: 100.0%;">     <h4>ID: M2595</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>520-053 Most cez rieku Oravu za obcou Štefanov</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1950 (73 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Tvrdošín</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>60.0 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta II. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Žilina</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Satisfactory</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=49.36036,19.54893" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_724eca557b41b68449a7280eb4d05598.setContent(html_091517582954d09df540b994dbce0761);
+            
+        
+
+        marker_b2f4abdd4fdf2cdccf8c2294d09c4449.bindPopup(popup_724eca557b41b68449a7280eb4d05598)
+        ;
+
+        
+    
+    
+            var marker_e64983815ba4037eb332df2c11711f48 = L.marker(
+                [48.853521574, 20.38516586],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_522cd23243a60f86e2e7218682637c67 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_6.svg"});
+        marker_e64983815ba4037eb332df2c11711f48.setIcon(custom_icon_522cd23243a60f86e2e7218682637c67);
+        
+    
+        var popup_40126babba07835bab339b77f88979d1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_404e0647f3fedb6e268b16008d6585a8 = $(`<div id="html_404e0647f3fedb6e268b16008d6585a8" style="width: 100.0%; height: 100.0%;">     <h4>ID: M162</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>Most cez rieku Hnilec v osade Dobšiná - Dedinky</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1951 (72 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Rožňava</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>56.8 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta II. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Košice</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Very Poor</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=48.853521574,20.38516586" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_40126babba07835bab339b77f88979d1.setContent(html_404e0647f3fedb6e268b16008d6585a8);
+            
+        
+
+        marker_e64983815ba4037eb332df2c11711f48.bindPopup(popup_40126babba07835bab339b77f88979d1)
+        ;
+
+        
+    
+    
+            var marker_a5ea88ff7941c06b689b0d77d81951de = L.marker(
+                [48.777984962, 17.614703642],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_d51f81f9f4e2f3edc857f62ca195eb5f = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_1.svg"});
+        marker_a5ea88ff7941c06b689b0d77d81951de.setIcon(custom_icon_d51f81f9f4e2f3edc857f62ca195eb5f);
+        
+    
+        var popup_6fe341aa55612ad08a8cbe3b58993446 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9dcf00931f9d7c794310ac6aaae444cd = $(`<div id="html_9dcf00931f9d7c794310ac6aaae444cd" style="width: 100.0%; height: 100.0%;">     <h4>ID: M7267</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>Most nad železnicou v obci Poriadie</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1928 (95 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Myjava</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>42.2 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta III. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Trenčín</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Flawless</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=48.777984962,17.614703642" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_6fe341aa55612ad08a8cbe3b58993446.setContent(html_9dcf00931f9d7c794310ac6aaae444cd);
+            
+        
+
+        marker_a5ea88ff7941c06b689b0d77d81951de.bindPopup(popup_6fe341aa55612ad08a8cbe3b58993446)
+        ;
+
+        
+    
+    
+            var marker_7f3a6b6dc84f0d8760b33c1e06cabc98 = L.marker(
+                [48.776220891, 17.675602051],
+                {}
+            ).addTo(map_aa6247eeaa68731cb35d1c03044f7af0);
+        
+    
+        var custom_icon_ef052d2c7d27e6768993bcb7c3953139 = L.icon({"iconAnchor": [25, 50], "iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/9d3208870f50e96e7907ec8394da05bc765a3943/markers/nmark_1.svg"});
+        marker_7f3a6b6dc84f0d8760b33c1e06cabc98.setIcon(custom_icon_ef052d2c7d27e6768993bcb7c3953139);
+        
+    
+        var popup_54cbe671756867cea2fb729ef91235bb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_acb4170b34dc6abda2f9c70d67e3498c = $(`<div id="html_acb4170b34dc6abda2f9c70d67e3498c" style="width: 100.0%; height: 100.0%;">     <h4>ID: M7796</h4>     <table>         <tr>             <td style="width: 100px;"><u>Name:</u>&nbsp; </td>             <td>Most nad železnicou pred mestom Stará Turá</td>         </tr>         <tr>             <td><u>Year:</u>&nbsp; </td>             <td>1928 (95 years ago)</td>         </tr>         <tr>             <td><u>District:</u>&nbsp; </td>             <td>Nové Mesto nad Váhom</td>         </tr>         <tr>             <td><u>Length:</u>&nbsp; </td>             <td>35.0 m</td>         </tr>         <tr>             <td><u>Material:</u>&nbsp; </td>             <td>monolitický železobetón</td>         </tr>         <tr>             <td><u>Road Class:</u>&nbsp; </td>             <td>cesta III. triedy</td>         </tr>         <tr>             <td><u>Region:</u>&nbsp; </td>             <td>Trenčín</td>         </tr>         <tr>             <td><u>Condition (2023)</u>&nbsp; </td>             <td>Flawless</td>         </tr>         <tr>             <td><u>Location:</u>&nbsp; </td>             <td><a href="https://www.google.com/maps?q=48.776220891,17.675602051" target="_blank">View on Google Maps</a></td>         </tr>     </table>     </div>`)[0];
+                popup_54cbe671756867cea2fb729ef91235bb.setContent(html_acb4170b34dc6abda2f9c70d67e3498c);
+            
+        
+
+        marker_7f3a6b6dc84f0d8760b33c1e06cabc98.bindPopup(popup_54cbe671756867cea2fb729ef91235bb)
+        ;
+
+        
+    
+</script>
+</html>
