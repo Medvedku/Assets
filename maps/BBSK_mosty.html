@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f6c29c0b6d2e69bb7607f29c9808964 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f6c29c0b6d2e69bb7607f29c9808964" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f6c29c0b6d2e69bb7607f29c9808964 = L.map(
+                "map_7f6c29c0b6d2e69bb7607f29c9808964",
+                {
+                    center: [48.449872987261905, 19.3839442415],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89616d5b3e46c15f2fb00c160ec0d05f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_89616d5b3e46c15f2fb00c160ec0d05f.addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+            var marker_4c40ce2b032c3ec1cebac7c839931a8f = L.marker(
+                [48.483090582, 18.721645922],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_3086092a64efa6e0e05c67a330b8e056 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_4c40ce2b032c3ec1cebac7c839931a8f.setIcon(custom_icon_3086092a64efa6e0e05c67a330b8e056);
+        
+    
+        var popup_e3b5dc6ff893b4bda129e9c3f2b68993 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef5b02ccccf23692b662a90c25d68155 = $(`<div id="html_ef5b02ccccf23692b662a90c25d68155" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000428-002 Most cez Kľakovský potok v km 1,824 v meste Žarnovica</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1947</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.4831, 18.7216)</td></tr></table></div>`)[0];
+                popup_e3b5dc6ff893b4bda129e9c3f2b68993.setContent(html_ef5b02ccccf23692b662a90c25d68155);
+            
+        
+
+        marker_4c40ce2b032c3ec1cebac7c839931a8f.bindPopup(popup_e3b5dc6ff893b4bda129e9c3f2b68993)
+        ;
+
+        
+    
+    
+            marker_4c40ce2b032c3ec1cebac7c839931a8f.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M3640</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02a17155b6a0f38f8b5c9af51b29a992 = L.marker(
+                [48.503298804, 18.654881853],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_63735a3cd390cae6f84dc64cb80ac3ab = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_02a17155b6a0f38f8b5c9af51b29a992.setIcon(custom_icon_63735a3cd390cae6f84dc64cb80ac3ab);
+        
+    
+        var popup_dd210ec2535625ad16a7b6645edf3b5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0f249d341ea73535706336ea74b35fb = $(`<div id="html_d0f249d341ea73535706336ea74b35fb" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000512-017 Most  v km 26,690 cez Kľakovský potok Horné Hámre</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1938</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5033, 18.6549)</td></tr></table></div>`)[0];
+                popup_dd210ec2535625ad16a7b6645edf3b5e.setContent(html_d0f249d341ea73535706336ea74b35fb);
+            
+        
+
+        marker_02a17155b6a0f38f8b5c9af51b29a992.bindPopup(popup_dd210ec2535625ad16a7b6645edf3b5e)
+        ;
+
+        
+    
+    
+            marker_02a17155b6a0f38f8b5c9af51b29a992.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M3652</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32c3b309078687cd46168b56e3da8ac1 = L.marker(
+                [48.44921952, 18.903787674],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_9e7280a429885327050ce4669cd4c5c9 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_32c3b309078687cd46168b56e3da8ac1.setIcon(custom_icon_9e7280a429885327050ce4669cd4c5c9);
+        
+    
+        var popup_1b9386880227d4e939da30b12670eb71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64a823795213357c03d991db8ae01e25 = $(`<div id="html_64a823795213357c03d991db8ae01e25" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>524-12 Most nad poľnou cestou v Banskej Štiavnici v km 31,222 (000524-012)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1985</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.4492, 18.9038)</td></tr></table></div>`)[0];
+                popup_1b9386880227d4e939da30b12670eb71.setContent(html_64a823795213357c03d991db8ae01e25);
+            
+        
+
+        marker_32c3b309078687cd46168b56e3da8ac1.bindPopup(popup_1b9386880227d4e939da30b12670eb71)
+        ;
+
+        
+    
+    
+            marker_32c3b309078687cd46168b56e3da8ac1.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M7079</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ca1d2dfe915eacf236a0263c3bc81bd = L.marker(
+                [48.55524, 19.47778],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_bbbff5b60a90c36259cc2ba844af5973 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_7ca1d2dfe915eacf236a0263c3bc81bd.setIcon(custom_icon_bbbff5b60a90c36259cc2ba844af5973);
+        
+    
+        var popup_4d795ef2411f46ea976685d55e152e42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e052065cff4cba7a76a52a8e384d259d = $(`<div id="html_e052065cff4cba7a76a52a8e384d259d" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>526-20_Most cez potok Slatina za obcou Korytárky (000526-020)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1958</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5552, 19.4778)</td></tr></table></div>`)[0];
+                popup_4d795ef2411f46ea976685d55e152e42.setContent(html_e052065cff4cba7a76a52a8e384d259d);
+            
+        
+
+        marker_7ca1d2dfe915eacf236a0263c3bc81bd.bindPopup(popup_4d795ef2411f46ea976685d55e152e42)
+        ;
+
+        
+    
+    
+            marker_7ca1d2dfe915eacf236a0263c3bc81bd.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4237</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ae8dfb9a480051cc6e38ea1a836e55e = L.marker(
+                [48.583442847, 19.941992977],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_0d585f014bf4e22b3f8a2f773160360d = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_7ae8dfb9a480051cc6e38ea1a836e55e.setIcon(custom_icon_0d585f014bf4e22b3f8a2f773160360d);
+        
+    
+        var popup_b0d705398de5fc2b6989ec39e4725f9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f92c8deff69d7d6c956ff5bd194ecba = $(`<div id="html_8f92c8deff69d7d6c956ff5bd194ecba" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000526-048  Most cez potok Klenovská Rimava v obci Hnúšťa</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1950</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5834, 19.9420)</td></tr></table></div>`)[0];
+                popup_b0d705398de5fc2b6989ec39e4725f9c.setContent(html_8f92c8deff69d7d6c956ff5bd194ecba);
+            
+        
+
+        marker_7ae8dfb9a480051cc6e38ea1a836e55e.bindPopup(popup_b0d705398de5fc2b6989ec39e4725f9c)
+        ;
+
+        
+    
+    
+            marker_7ae8dfb9a480051cc6e38ea1a836e55e.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M230</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b59bc2630c56fcf840936aab1e8b47f7 = L.marker(
+                [48.406386175, 19.168345403],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_4e3d64c62b94dbb86c25e6535b51551e = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_b59bc2630c56fcf840936aab1e8b47f7.setIcon(custom_icon_4e3d64c62b94dbb86c25e6535b51551e);
+        
+    
+        var popup_2a90ce80f5b11bf2a32c685dd26b02aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1afa92d915eea1e52784866f77cfac8a = $(`<div id="html_1afa92d915eea1e52784866f77cfac8a" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000527-037_Most cez potok Krupinica v obci Zábava</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1958</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.4064, 19.1683)</td></tr></table></div>`)[0];
+                popup_2a90ce80f5b11bf2a32c685dd26b02aa.setContent(html_1afa92d915eea1e52784866f77cfac8a);
+            
+        
+
+        marker_b59bc2630c56fcf840936aab1e8b47f7.bindPopup(popup_2a90ce80f5b11bf2a32c685dd26b02aa)
+        ;
+
+        
+    
+    
+            marker_b59bc2630c56fcf840936aab1e8b47f7.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4048</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bd27139df63008b39d9bde73ffa61c6 = L.marker(
+                [48.089862198, 19.295649384],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_466819265ad4f318aab51c64e5bac17d = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_9bd27139df63008b39d9bde73ffa61c6.setIcon(custom_icon_466819265ad4f318aab51c64e5bac17d);
+        
+    
+        var popup_0f6d5576a8bc50292a9473b58d3ba98a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6b38bb4349284e24019d8e50ffd2dd8 = $(`<div id="html_b6b38bb4349284e24019d8e50ffd2dd8" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000527A-011a Most cez potok Kurekovský v obci Slovenské Ďarmoty</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1940</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.0899, 19.2956)</td></tr></table></div>`)[0];
+                popup_0f6d5576a8bc50292a9473b58d3ba98a.setContent(html_b6b38bb4349284e24019d8e50ffd2dd8);
+            
+        
+
+        marker_9bd27139df63008b39d9bde73ffa61c6.bindPopup(popup_0f6d5576a8bc50292a9473b58d3ba98a)
+        ;
+
+        
+    
+    
+            marker_9bd27139df63008b39d9bde73ffa61c6.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M3010</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe4fb979a680a8b379d991b86a51c8ce = L.marker(
+                [48.735519028, 19.646948239],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_8dba4f7ead3835e5a8174becd48e7dda = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_fe4fb979a680a8b379d991b86a51c8ce.setIcon(custom_icon_8dba4f7ead3835e5a8174becd48e7dda);
+        
+    
+        var popup_7e7433f877b45630a28aea0c091d6ffd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a7c3d99d517507a24815656d290feff = $(`<div id="html_2a7c3d99d517507a24815656d290feff" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>529-9_Most cez potok Vydrovo a Čiernohronskú železničku v Č. Balogu (000529-009)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1940</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.7355, 19.6469)</td></tr></table></div>`)[0];
+                popup_7e7433f877b45630a28aea0c091d6ffd.setContent(html_2a7c3d99d517507a24815656d290feff);
+            
+        
+
+        marker_fe4fb979a680a8b379d991b86a51c8ce.bindPopup(popup_7e7433f877b45630a28aea0c091d6ffd)
+        ;
+
+        
+    
+    
+            marker_fe4fb979a680a8b379d991b86a51c8ce.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4828</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e756c0f13fa80fc664fd97ce1d49825b = L.marker(
+                [48.305059658, 20.080201485],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_93ef9873821a4e470aaee010476087f5 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_e756c0f13fa80fc664fd97ce1d49825b.setIcon(custom_icon_93ef9873821a4e470aaee010476087f5);
+        
+    
+        var popup_773450827f1bbb103b5c606aff7aa681 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_891154e1e73e410a41f700a20378f024 = $(`<div id="html_891154e1e73e410a41f700a20378f024" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000571-032 Most cez  rieku Rimava v obci Jesenské</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1959</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.3051, 20.0802)</td></tr></table></div>`)[0];
+                popup_773450827f1bbb103b5c606aff7aa681.setContent(html_891154e1e73e410a41f700a20378f024);
+            
+        
+
+        marker_e756c0f13fa80fc664fd97ce1d49825b.bindPopup(popup_773450827f1bbb103b5c606aff7aa681)
+        ;
+
+        
+    
+    
+            marker_e756c0f13fa80fc664fd97ce1d49825b.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M2219</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20ddecf7aee3156adeea13d8e2fcef50 = L.marker(
+                [48.309595389, 20.251367778],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_00bc8a8dbfb56b9dfe43bd3c1f4308ba = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_20ddecf7aee3156adeea13d8e2fcef50.setIcon(custom_icon_00bc8a8dbfb56b9dfe43bd3c1f4308ba);
+        
+    
+        var popup_4bbae0f7c3f5cb8c738fcb620b802624 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8fc106dddddd0058c7ba5844e04c4e8 = $(`<div id="html_a8fc106dddddd0058c7ba5844e04c4e8" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000571-039  Most cez  potok Blh   za obcou Rimavská Seč</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1958</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.3096, 20.2514)</td></tr></table></div>`)[0];
+                popup_4bbae0f7c3f5cb8c738fcb620b802624.setContent(html_a8fc106dddddd0058c7ba5844e04c4e8);
+            
+        
+
+        marker_20ddecf7aee3156adeea13d8e2fcef50.bindPopup(popup_4bbae0f7c3f5cb8c738fcb620b802624)
+        ;
+
+        
+    
+    
+            marker_20ddecf7aee3156adeea13d8e2fcef50.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M3780</th></tr><tr><td style='text-align:left;'>STS:</td><td>7</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7427a206a5ca48feb5a4ae3250a682c = L.marker(
+                [48.24608, 19.488],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_431ea79e2aac4ff2ed4dc36423fbcc9f = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_f7427a206a5ca48feb5a4ae3250a682c.setIcon(custom_icon_431ea79e2aac4ff2ed4dc36423fbcc9f);
+        
+    
+        var popup_68abbfe7a174264ef41caaa08654cd57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c698547ae90364bd1a099e52a9d296cb = $(`<div id="html_c698547ae90364bd1a099e52a9d296cb" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000591-033 Most cez potok Tisovník v obci Dolná Strehová</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1959</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.2461, 19.4880)</td></tr></table></div>`)[0];
+                popup_68abbfe7a174264ef41caaa08654cd57.setContent(html_c698547ae90364bd1a099e52a9d296cb);
+            
+        
+
+        marker_f7427a206a5ca48feb5a4ae3250a682c.bindPopup(popup_68abbfe7a174264ef41caaa08654cd57)
+        ;
+
+        
+    
+    
+            marker_f7427a206a5ca48feb5a4ae3250a682c.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M7269</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba30d19a2ad6e9a44790bff73003431f = L.marker(
+                [48.285467446, 19.678139159],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_0aaa3bc3a4d74e16c7122054185e77e6 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_ba30d19a2ad6e9a44790bff73003431f.setIcon(custom_icon_0aaa3bc3a4d74e16c7122054185e77e6);
+        
+    
+        var popup_71c39d5d28dba97d3f83efebad0013be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f29d1f18e68c0321c0b113e4dba8491e = $(`<div id="html_f29d1f18e68c0321c0b113e4dba8491e" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>000594-005_Most cez inundačné územie pri obci Rapovce</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta II. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>oceľ -  plnostenná</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1954</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.2855, 19.6781)</td></tr></table></div>`)[0];
+                popup_71c39d5d28dba97d3f83efebad0013be.setContent(html_f29d1f18e68c0321c0b113e4dba8491e);
+            
+        
+
+        marker_ba30d19a2ad6e9a44790bff73003431f.bindPopup(popup_71c39d5d28dba97d3f83efebad0013be)
+        ;
+
+        
+    
+    
+            marker_ba30d19a2ad6e9a44790bff73003431f.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M6848</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84be27c5ccd0cf3fcc88da93e709620b = L.marker(
+                [48.627781099, 18.794582525],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_2d9fd65c202279dadfe768bae6539069 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_84be27c5ccd0cf3fcc88da93e709620b.setIcon(custom_icon_2d9fd65c202279dadfe768bae6539069);
+        
+    
+        var popup_d3c92b2e9bed8fba4df9aeb4b4397d3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d299aaed455d57b16499cb31e27845d5 = $(`<div id="html_d299aaed455d57b16499cb31e27845d5" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2480-001 Most cez potok Lutila v km 0,539 Janova Lehota Ábelov mlyn (050072-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1960</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.6278, 18.7946)</td></tr></table></div>`)[0];
+                popup_d3c92b2e9bed8fba4df9aeb4b4397d3e.setContent(html_d299aaed455d57b16499cb31e27845d5);
+            
+        
+
+        marker_84be27c5ccd0cf3fcc88da93e709620b.bindPopup(popup_d3c92b2e9bed8fba4df9aeb4b4397d3e)
+        ;
+
+        
+    
+    
+            marker_84be27c5ccd0cf3fcc88da93e709620b.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M7392</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17dec4bd4ca4a8761f625bd09c85f261 = L.marker(
+                [48.590570049, 18.867365133],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_866ce3bb9e2920eba0df339f195041e6 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_17dec4bd4ca4a8761f625bd09c85f261.setIcon(custom_icon_866ce3bb9e2920eba0df339f195041e6);
+        
+    
+        var popup_2162d35e6bff935feba9df7a588b7c3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27b3b53684d72b7ae99cc3a4c8dd4538 = $(`<div id="html_27b3b53684d72b7ae99cc3a4c8dd4538" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2484-001 Most cez Lutilský potok v km 0,676 Žiar nad Hronom (050076-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1960</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5906, 18.8674)</td></tr></table></div>`)[0];
+                popup_2162d35e6bff935feba9df7a588b7c3c.setContent(html_27b3b53684d72b7ae99cc3a4c8dd4538);
+            
+        
+
+        marker_17dec4bd4ca4a8761f625bd09c85f261.bindPopup(popup_2162d35e6bff935feba9df7a588b7c3c)
+        ;
+
+        
+    
+    
+            marker_17dec4bd4ca4a8761f625bd09c85f261.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M5488</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f716acbeb125c76543e6b378996fdf4 = L.marker(
+                [48.584470003, 18.971606497],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_0ce79804f73de21d84789545c935bff8 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_7f716acbeb125c76543e6b378996fdf4.setIcon(custom_icon_0ce79804f73de21d84789545c935bff8);
+        
+    
+        var popup_310939db8ee92c7da98b6645c6a4c639 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9153958598723ff9fded4691eef9c9e = $(`<div id="html_a9153958598723ff9fded4691eef9c9e" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2492-005 Most nad železničnou traťou v km 6,050 Vrútky-Zvolen Trnavá Hora (050092-005)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1950</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5845, 18.9716)</td></tr></table></div>`)[0];
+                popup_310939db8ee92c7da98b6645c6a4c639.setContent(html_a9153958598723ff9fded4691eef9c9e);
+            
+        
+
+        marker_7f716acbeb125c76543e6b378996fdf4.bindPopup(popup_310939db8ee92c7da98b6645c6a4c639)
+        ;
+
+        
+    
+    
+            marker_7f716acbeb125c76543e6b378996fdf4.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M5143</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2483650c7d8ef436926f193eca45539e = L.marker(
+                [48.53518, 19.40646],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_acb2a547985a9fe4ddd2271e59d5d631 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_2483650c7d8ef436926f193eca45539e.setIcon(custom_icon_acb2a547985a9fe4ddd2271e59d5d631);
+        
+    
+        var popup_f276de4efc406b6363c34a964610fa72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_975c1525c785ad42172eddc91a18e46b = $(`<div id="html_975c1525c785ad42172eddc91a18e46b" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2694-2 Most cez  rieku Slatina pri železničnej stanici Detva (050098-002)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1964</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5352, 19.4065)</td></tr></table></div>`)[0];
+                popup_f276de4efc406b6363c34a964610fa72.setContent(html_975c1525c785ad42172eddc91a18e46b);
+            
+        
+
+        marker_2483650c7d8ef436926f193eca45539e.bindPopup(popup_f276de4efc406b6363c34a964610fa72)
+        ;
+
+        
+    
+    
+            marker_2483650c7d8ef436926f193eca45539e.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4242</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_025020713adb795782d2b802dc65fa47 = L.marker(
+                [48.445086827, 20.117562438],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_7cee94771ca718b987b3224988318862 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_025020713adb795782d2b802dc65fa47.setIcon(custom_icon_7cee94771ca718b987b3224988318862);
+        
+    
+        var popup_ba640ebc18f44949621e6f19d65ef514 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35cf77175f5cd1f0265de6b2fb71e959 = $(`<div id="html_35cf77175f5cd1f0265de6b2fb71e959" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2753-6 Most cez potok Blh v obci  Veľký Blh (050130-006)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1959</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.4451, 20.1176)</td></tr></table></div>`)[0];
+                popup_ba640ebc18f44949621e6f19d65ef514.setContent(html_35cf77175f5cd1f0265de6b2fb71e959);
+            
+        
+
+        marker_025020713adb795782d2b802dc65fa47.bindPopup(popup_ba640ebc18f44949621e6f19d65ef514)
+        ;
+
+        
+    
+    
+            marker_025020713adb795782d2b802dc65fa47.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M2601</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48573bef4865ae6fe283444d7b07c929 = L.marker(
+                [48.407241776, 18.646467316],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_b83e4a31b1d62695ed8e562fcc6488ab = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_48573bef4865ae6fe283444d7b07c929.setIcon(custom_icon_b83e4a31b1d62695ed8e562fcc6488ab);
+        
+    
+        var popup_a2a4c68a4d99b4a9b43fdd180f34f4a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aa2cf62dec01a37956ed46c1647f006 = $(`<div id="html_5aa2cf62dec01a37956ed46c1647f006" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2514-002 Most cez rieku Hron v km 0,630 Brehy (065011-002)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>oblúková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>oceľ -  priehradová</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1958</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.4072, 18.6465)</td></tr></table></div>`)[0];
+                popup_a2a4c68a4d99b4a9b43fdd180f34f4a1.setContent(html_5aa2cf62dec01a37956ed46c1647f006);
+            
+        
+
+        marker_48573bef4865ae6fe283444d7b07c929.bindPopup(popup_a2a4c68a4d99b4a9b43fdd180f34f4a1)
+        ;
+
+        
+    
+    
+            marker_48573bef4865ae6fe283444d7b07c929.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M1335</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3680d52420fb3639fd9c0f5c0d1866c3 = L.marker(
+                [48.432094035, 18.683312772],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_09599b3dba52c21cd0197ecad584f2ee = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_3680d52420fb3639fd9c0f5c0d1866c3.setIcon(custom_icon_09599b3dba52c21cd0197ecad584f2ee);
+        
+    
+        var popup_f18050d06c618809ceadf1b339c36f95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e07a298f005ac7352f1cbb93b4d09f1 = $(`<div id="html_9e07a298f005ac7352f1cbb93b4d09f1" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2517-001 Most cez rieku Hron v km 0,358 Rudno nad Hronom (065013-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1985</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.4321, 18.6833)</td></tr></table></div>`)[0];
+                popup_f18050d06c618809ceadf1b339c36f95.setContent(html_9e07a298f005ac7352f1cbb93b4d09f1);
+            
+        
+
+        marker_3680d52420fb3639fd9c0f5c0d1866c3.bindPopup(popup_f18050d06c618809ceadf1b339c36f95)
+        ;
+
+        
+    
+    
+            marker_3680d52420fb3639fd9c0f5c0d1866c3.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M5469</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5209a6eb771a2670cb69ed3d2a28ff19 = L.marker(
+                [48.232480158, 18.999173743],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_1d1c6ba281b81bdd5ce10959995cfb92 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_5209a6eb771a2670cb69ed3d2a28ff19.setIcon(custom_icon_1d1c6ba281b81bdd5ce10959995cfb92);
+        
+    
+        var popup_ae4e2fcad510fe40711cc00bd3bc53ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ff701796b64658459aa707dc1bc7968 = $(`<div id="html_2ff701796b64658459aa707dc1bc7968" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2554-1 Most cez rieku Krupinica v obci Medovarce (066002-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1973</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.2325, 18.9992)</td></tr></table></div>`)[0];
+                popup_ae4e2fcad510fe40711cc00bd3bc53ae.setContent(html_2ff701796b64658459aa707dc1bc7968);
+            
+        
+
+        marker_5209a6eb771a2670cb69ed3d2a28ff19.bindPopup(popup_ae4e2fcad510fe40711cc00bd3bc53ae)
+        ;
+
+        
+    
+    
+            marker_5209a6eb771a2670cb69ed3d2a28ff19.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M7206</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5806316f8135446a3ae2a0c507ec5a8b = L.marker(
+                [48.199756565, 18.922444541],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_2985caeca9ffa6f6ff8883fd6ec9aa2a = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_5806316f8135446a3ae2a0c507ec5a8b.setIcon(custom_icon_2985caeca9ffa6f6ff8883fd6ec9aa2a);
+        
+    
+        var popup_4995bfb8813bfb66b180fb453acf31b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6a4b1ccad11607613c0d11060b23f97 = $(`<div id="html_a6a4b1ccad11607613c0d11060b23f97" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2556-1 Most cez potok Štiavnička v obci Dvorníky (066005-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1956</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.1998, 18.9224)</td></tr></table></div>`)[0];
+                popup_4995bfb8813bfb66b180fb453acf31b2.setContent(html_a6a4b1ccad11607613c0d11060b23f97);
+            
+        
+
+        marker_5806316f8135446a3ae2a0c507ec5a8b.bindPopup(popup_4995bfb8813bfb66b180fb453acf31b2)
+        ;
+
+        
+    
+    
+            marker_5806316f8135446a3ae2a0c507ec5a8b.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M5141</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0356e626a5fa8fec612285b20c98001 = L.marker(
+                [48.331583721, 18.966863296],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_58cf594ed5af54372273e6ea902ddadc = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_c0356e626a5fa8fec612285b20c98001.setIcon(custom_icon_58cf594ed5af54372273e6ea902ddadc);
+        
+    
+        var popup_ca8d0aef13521259f763cebda1173072 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_329812efef6da5330c593637b3ba7868 = $(`<div id="html_329812efef6da5330c593637b3ba7868" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2561-5 Most cez potok Štiavnica za obcou Krnišov (066010-005)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1976</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.3316, 18.9669)</td></tr></table></div>`)[0];
+                popup_ca8d0aef13521259f763cebda1173072.setContent(html_329812efef6da5330c593637b3ba7868);
+            
+        
+
+        marker_c0356e626a5fa8fec612285b20c98001.bindPopup(popup_ca8d0aef13521259f763cebda1173072)
+        ;
+
+        
+    
+    
+            marker_c0356e626a5fa8fec612285b20c98001.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4478</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43d7ec6883d6cda78067305709ca6caa = L.marker(
+                [48.51819206, 19.098136419],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_40cf34c78056e0418ffe218efaf4ad56 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_43d7ec6883d6cda78067305709ca6caa.setIcon(custom_icon_40cf34c78056e0418ffe218efaf4ad56);
+        
+    
+        var popup_3b589d7a0057e2b80c11f4ba50edeb10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aafea7d6cc876a0b70fc3d0c3be03178 = $(`<div id="html_aafea7d6cc876a0b70fc3d0c3be03178" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2447-1_Most cez potok Neresnica v obci Dolné Breziny (066013-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1959</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5182, 19.0981)</td></tr></table></div>`)[0];
+                popup_3b589d7a0057e2b80c11f4ba50edeb10.setContent(html_aafea7d6cc876a0b70fc3d0c3be03178);
+            
+        
+
+        marker_43d7ec6883d6cda78067305709ca6caa.bindPopup(popup_3b589d7a0057e2b80c11f4ba50edeb10)
+        ;
+
+        
+    
+    
+            marker_43d7ec6883d6cda78067305709ca6caa.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4792</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94636a1a9e7a08fb73aae2af3dd5e42d = L.marker(
+                [48.667667624, 19.146966443],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_6ed5a668bb08777756eba7f1134714af = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_94636a1a9e7a08fb73aae2af3dd5e42d.setIcon(custom_icon_6ed5a668bb08777756eba7f1134714af);
+        
+    
+        var popup_4f55245ea7fb9cadb365b536f7033741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0529e4d51d118a4c7792e7d3472d7d63 = $(`<div id="html_0529e4d51d118a4c7792e7d3472d7d63" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2413-1_Most cez rieku Hron v obci Vlkanová (066019-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1964</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.6677, 19.1470)</td></tr></table></div>`)[0];
+                popup_4f55245ea7fb9cadb365b536f7033741.setContent(html_0529e4d51d118a4c7792e7d3472d7d63);
+            
+        
+
+        marker_94636a1a9e7a08fb73aae2af3dd5e42d.bindPopup(popup_4f55245ea7fb9cadb365b536f7033741)
+        ;
+
+        
+    
+    
+            marker_94636a1a9e7a08fb73aae2af3dd5e42d.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M2816</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d142d0c43a06e3b4fd3d7c6006c1cb5d = L.marker(
+                [48.572372704, 19.10644862],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_ad8cec0336e553f7fe9874adc362d284 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_d142d0c43a06e3b4fd3d7c6006c1cb5d.setIcon(custom_icon_ad8cec0336e553f7fe9874adc362d284);
+        
+    
+        var popup_3eae929b8e37812a3f78b97fdb53f025 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c03af40fe71af69edf4a6cf474b7ee4a = $(`<div id="html_c03af40fe71af69edf4a6cf474b7ee4a" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2452-1_Most cez rieku Hron, Bariny-Tepličky-Zvolen (066022-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1980</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5724, 19.1064)</td></tr></table></div>`)[0];
+                popup_3eae929b8e37812a3f78b97fdb53f025.setContent(html_c03af40fe71af69edf4a6cf474b7ee4a);
+            
+        
+
+        marker_d142d0c43a06e3b4fd3d7c6006c1cb5d.bindPopup(popup_3eae929b8e37812a3f78b97fdb53f025)
+        ;
+
+        
+    
+    
+            marker_d142d0c43a06e3b4fd3d7c6006c1cb5d.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M5328</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d9ec38f03cb69001a5736e85c1fdd0f = L.marker(
+                [48.57483, 19.13166],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_3eea5f6c9f71fb25874c21fe7e1a39b5 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_6d9ec38f03cb69001a5736e85c1fdd0f.setIcon(custom_icon_3eea5f6c9f71fb25874c21fe7e1a39b5);
+        
+    
+        var popup_6f286615dfb758d777abb30a89dc776f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_545da8e2f77c40c065f5c590fcfffe4f = $(`<div id="html_545da8e2f77c40c065f5c590fcfffe4f" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2452-4 Most nad  traťou ŽSR Zvolen-Margecany (066022-004)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1970</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5748, 19.1317)</td></tr></table></div>`)[0];
+                popup_6f286615dfb758d777abb30a89dc776f.setContent(html_545da8e2f77c40c065f5c590fcfffe4f);
+            
+        
+
+        marker_6d9ec38f03cb69001a5736e85c1fdd0f.bindPopup(popup_6f286615dfb758d777abb30a89dc776f)
+        ;
+
+        
+    
+    
+            marker_6d9ec38f03cb69001a5736e85c1fdd0f.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M220</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66ebc35c50487c57d4a756ab097721e6 = L.marker(
+                [48.5789909, 19.19372403],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_ecfdb1b9530f01cc1a5b96cf9ec20614 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_66ebc35c50487c57d4a756ab097721e6.setIcon(custom_icon_ecfdb1b9530f01cc1a5b96cf9ec20614);
+        
+    
+        var popup_5be937daa26061bd5a39f3925c0f1965 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b18bdbcf41c4aed0f16f1d84f69ccfc3 = $(`<div id="html_b18bdbcf41c4aed0f16f1d84f69ccfc3" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2454-3_Most cez potok Hučava v obci Lieskovec (066027-003)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1963</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5790, 19.1937)</td></tr></table></div>`)[0];
+                popup_5be937daa26061bd5a39f3925c0f1965.setContent(html_b18bdbcf41c4aed0f16f1d84f69ccfc3);
+            
+        
+
+        marker_66ebc35c50487c57d4a756ab097721e6.bindPopup(popup_5be937daa26061bd5a39f3925c0f1965)
+        ;
+
+        
+    
+    
+            marker_66ebc35c50487c57d4a756ab097721e6.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M1174</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe9d024213d49804540a8f23e9b28cf6 = L.marker(
+                [48.739957706, 19.217478985],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_25f0697f8e9441ae6cf17d60857274e8 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_fe9d024213d49804540a8f23e9b28cf6.setIcon(custom_icon_25f0697f8e9441ae6cf17d60857274e8);
+        
+    
+        var popup_5b5f374e264f312284b73482b66057ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2aa2fb325ed61cc0285d846687600236 = $(`<div id="html_2aa2fb325ed61cc0285d846687600236" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2420-2_Most cez Hron v Šalkovej pri B. Bystrici (066035-002)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>oceľ -  plnostenná</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1956</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.7400, 19.2175)</td></tr></table></div>`)[0];
+                popup_5b5f374e264f312284b73482b66057ac.setContent(html_2aa2fb325ed61cc0285d846687600236);
+            
+        
+
+        marker_fe9d024213d49804540a8f23e9b28cf6.bindPopup(popup_5b5f374e264f312284b73482b66057ac)
+        ;
+
+        
+    
+    
+            marker_fe9d024213d49804540a8f23e9b28cf6.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M1304</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f4757059aa8799499a176ef44c58856 = L.marker(
+                [48.746799383, 19.232512487],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_e77d744beb50a919cefeb17380ab3dac = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_1f4757059aa8799499a176ef44c58856.setIcon(custom_icon_e77d744beb50a919cefeb17380ab3dac);
+        
+    
+        var popup_b6732808cacba876183020f0a0d291cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da5cec90ed3dc1fbc52330a32e22be24 = $(`<div id="html_da5cec90ed3dc1fbc52330a32e22be24" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2427-1_Most na odbočení do Biotikiky Sl. Ľupča cez žel. trať ZV-Margecany žkm 24,133 (066042-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1975</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.7468, 19.2325)</td></tr></table></div>`)[0];
+                popup_b6732808cacba876183020f0a0d291cb.setContent(html_da5cec90ed3dc1fbc52330a32e22be24);
+            
+        
+
+        marker_1f4757059aa8799499a176ef44c58856.bindPopup(popup_b6732808cacba876183020f0a0d291cb)
+        ;
+
+        
+    
+    
+            marker_1f4757059aa8799499a176ef44c58856.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M7777</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c0b03835dd3f03e84f0e4b6348e7ee5 = L.marker(
+                [48.792738549, 19.384604623],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_99c91659e4cd106ae29f23e3e9280481 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_5c0b03835dd3f03e84f0e4b6348e7ee5.setIcon(custom_icon_99c91659e4cd106ae29f23e3e9280481);
+        
+    
+        var popup_bd01e6af01c311fee2a1459153560e84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_444b2ded1d89639fe34d8f215ecfaf23 = $(`<div id="html_444b2ded1d89639fe34d8f215ecfaf23" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2430-2_Most cez rieku Hron v Brusne-Hronove (066045-002)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1960</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.7927, 19.3846)</td></tr></table></div>`)[0];
+                popup_bd01e6af01c311fee2a1459153560e84.setContent(html_444b2ded1d89639fe34d8f215ecfaf23);
+            
+        
+
+        marker_5c0b03835dd3f03e84f0e4b6348e7ee5.bindPopup(popup_bd01e6af01c311fee2a1459153560e84)
+        ;
+
+        
+    
+    
+            marker_5c0b03835dd3f03e84f0e4b6348e7ee5.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4163</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b78ce34aec69fe4b003fd4ca8fdfb1a = L.marker(
+                [48.327694749, 19.685322259],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_765b1e238088042489e6b98e60986358 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_9b78ce34aec69fe4b003fd4ca8fdfb1a.setIcon(custom_icon_765b1e238088042489e6b98e60986358);
+        
+    
+        var popup_d624e737324cf868c83cdeae24db351b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85f3982dd1a4fe8a283b67171f724637 = $(`<div id="html_85f3982dd1a4fe8a283b67171f724637" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>071008-003_Most cez Krivánsky potok</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1960</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.3277, 19.6853)</td></tr></table></div>`)[0];
+                popup_d624e737324cf868c83cdeae24db351b.setContent(html_85f3982dd1a4fe8a283b67171f724637);
+            
+        
+
+        marker_9b78ce34aec69fe4b003fd4ca8fdfb1a.bindPopup(popup_d624e737324cf868c83cdeae24db351b)
+        ;
+
+        
+    
+    
+            marker_9b78ce34aec69fe4b003fd4ca8fdfb1a.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M2434</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f5ef0d3b2a25e5379a74cc3fa95ed92 = L.marker(
+                [48.351665467, 19.656435846],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_2e32f3df709262386bc0276ab73f74bb = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_5f5ef0d3b2a25e5379a74cc3fa95ed92.setIcon(custom_icon_2e32f3df709262386bc0276ab73f74bb);
+        
+    
+        var popup_6c2c4a488c4f54b1eb8b9882b47693d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c608be8b91dcd6f6dcc54ff4d2651cfe = $(`<div id="html_c608be8b91dcd6f6dcc54ff4d2651cfe" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>508055-005_most na c.III/508055</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1991</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.3517, 19.6564)</td></tr></table></div>`)[0];
+                popup_6c2c4a488c4f54b1eb8b9882b47693d3.setContent(html_c608be8b91dcd6f6dcc54ff4d2651cfe);
+            
+        
+
+        marker_5f5ef0d3b2a25e5379a74cc3fa95ed92.bindPopup(popup_6c2c4a488c4f54b1eb8b9882b47693d3)
+        ;
+
+        
+    
+    
+            marker_5f5ef0d3b2a25e5379a74cc3fa95ed92.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M5181</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_853073fafaf47bc15261c2e484fd0972 = L.marker(
+                [48.13683, 19.09955],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_63a19aac16763d93fd5412e4998bed2f = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_853073fafaf47bc15261c2e484fd0972.setIcon(custom_icon_63a19aac16763d93fd5412e4998bed2f);
+        
+    
+        var popup_bb3f5022efedd6ce3d1ed0d5eaaa3cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a08c62c6379b89b420c1fa7ca6d95345 = $(`<div id="html_a08c62c6379b89b420c1fa7ca6d95345" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2566-9 Most cez potok Veľký medzi obcami Hrušov a Vinica (526003-009)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1961</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.1368, 19.0996)</td></tr></table></div>`)[0];
+                popup_bb3f5022efedd6ce3d1ed0d5eaaa3cc4.setContent(html_a08c62c6379b89b420c1fa7ca6d95345);
+            
+        
+
+        marker_853073fafaf47bc15261c2e484fd0972.bindPopup(popup_bb3f5022efedd6ce3d1ed0d5eaaa3cc4)
+        ;
+
+        
+    
+    
+            marker_853073fafaf47bc15261c2e484fd0972.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M3128</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f93b8dc7592c2369112e745024f80a5 = L.marker(
+                [48.23134, 19.13476],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_f8a64f11fe3d8caf242f5fa1d1628c4e = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_1f93b8dc7592c2369112e745024f80a5.setIcon(custom_icon_f8a64f11fe3d8caf242f5fa1d1628c4e);
+        
+    
+        var popup_624a9ef0537dfe749ece3640b452d0e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04bf1cef7c1ff506976af561c47b6a59 = $(`<div id="html_04bf1cef7c1ff506976af561c47b6a59" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2568-10 Most cez potok Litava medzi hr. okresu a obcou Čelovce (526005-010)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1962</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.2313, 19.1348)</td></tr></table></div>`)[0];
+                popup_624a9ef0537dfe749ece3640b452d0e5.setContent(html_04bf1cef7c1ff506976af561c47b6a59);
+            
+        
+
+        marker_1f93b8dc7592c2369112e745024f80a5.bindPopup(popup_624a9ef0537dfe749ece3640b452d0e5)
+        ;
+
+        
+    
+    
+            marker_1f93b8dc7592c2369112e745024f80a5.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M6914</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_402976efb5158a52e5d85cfd8bf0301b = L.marker(
+                [48.128, 19.36973],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_044afc62add0e6a4c6a5159d4838b2dd = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_402976efb5158a52e5d85cfd8bf0301b.setIcon(custom_icon_044afc62add0e6a4c6a5159d4838b2dd);
+        
+    
+        var popup_54542a73532bb49e38c4fb0acabee11c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40fd957263ef566f437547b5662cd616 = $(`<div id="html_40fd957263ef566f437547b5662cd616" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2607-2 Most cez potok Krtíš medzi obcami Želovce a Kiarov ( 527024-002)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1958</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.1280, 19.3697)</td></tr></table></div>`)[0];
+                popup_54542a73532bb49e38c4fb0acabee11c.setContent(html_40fd957263ef566f437547b5662cd616);
+            
+        
+
+        marker_402976efb5158a52e5d85cfd8bf0301b.bindPopup(popup_54542a73532bb49e38c4fb0acabee11c)
+        ;
+
+        
+    
+    
+            marker_402976efb5158a52e5d85cfd8bf0301b.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M5264</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9302a6b134743e52e7013a589ab7de68 = L.marker(
+                [48.743224225, 19.666315188],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_1517811d12c75c3458a9394b715d3132 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_9302a6b134743e52e7013a589ab7de68.setIcon(custom_icon_1517811d12c75c3458a9394b715d3132);
+        
+    
+        var popup_5c4e5321cdc426583ceaddc7568fcc74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42caf5f690e2109965c8ce26990c71ec = $(`<div id="html_42caf5f690e2109965c8ce26990c71ec" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2395-1_Most cez Čierny Hron v Č. Balogu -Jánošovke (529003-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>monolitický železobetón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1957</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.7432, 19.6663)</td></tr></table></div>`)[0];
+                popup_5c4e5321cdc426583ceaddc7568fcc74.setContent(html_42caf5f690e2109965c8ce26990c71ec);
+            
+        
+
+        marker_9302a6b134743e52e7013a589ab7de68.bindPopup(popup_5c4e5321cdc426583ceaddc7568fcc74)
+        ;
+
+        
+    
+    
+            marker_9302a6b134743e52e7013a589ab7de68.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4244</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_272d9c717a3eda7c6eec55bfbd0605d8 = L.marker(
+                [48.435433335, 19.970005591],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_f418b68ccc9529cfcd209172ebbb1439 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_272d9c717a3eda7c6eec55bfbd0605d8.setIcon(custom_icon_f418b68ccc9529cfcd209172ebbb1439);
+        
+    
+        var popup_b8439e8d97627b742bec5c2f9f45efe4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_634633c3ed9bb5602727983f45402987 = $(`<div id="html_634633c3ed9bb5602727983f45402987" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2774-1 Most cez rieku Rimava za obcou Veľké Teriakovce (531004-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1964</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.4354, 19.9700)</td></tr></table></div>`)[0];
+                popup_b8439e8d97627b742bec5c2f9f45efe4.setContent(html_634633c3ed9bb5602727983f45402987);
+            
+        
+
+        marker_272d9c717a3eda7c6eec55bfbd0605d8.bindPopup(popup_b8439e8d97627b742bec5c2f9f45efe4)
+        ;
+
+        
+    
+    
+            marker_272d9c717a3eda7c6eec55bfbd0605d8.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M330</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2506e6c16f00e1f8857b07a2dbef793e = L.marker(
+                [48.578425225, 19.955987156],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_f9f832a8bf78227e02ccbb381a57240a = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_2506e6c16f00e1f8857b07a2dbef793e.setIcon(custom_icon_f9f832a8bf78227e02ccbb381a57240a);
+        
+    
+        var popup_361e1e21df6b69082abbc0c5f2558cc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c97345449193f451b97c5d455492d2ce = $(`<div id="html_c97345449193f451b97c5d455492d2ce" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2780-1 Most cez rieku Rimava v obci Hnúšti (531012-001)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1962</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5784, 19.9560)</td></tr></table></div>`)[0];
+                popup_361e1e21df6b69082abbc0c5f2558cc8.setContent(html_c97345449193f451b97c5d455492d2ce);
+            
+        
+
+        marker_2506e6c16f00e1f8857b07a2dbef793e.bindPopup(popup_361e1e21df6b69082abbc0c5f2558cc8)
+        ;
+
+        
+    
+    
+            marker_2506e6c16f00e1f8857b07a2dbef793e.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M243</th></tr><tr><td style='text-align:left;'>STS:</td><td>5</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3b51aa9b8af1278533ccacb9314db50 = L.marker(
+                [48.53908423, 20.302391698],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_8707adcdf8941e164b285949bbe9bb17 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_b3b51aa9b8af1278533ccacb9314db50.setIcon(custom_icon_8707adcdf8941e164b285949bbe9bb17);
+        
+    
+        var popup_95460ae6eb40c52ecad9e0f2fdeb1961 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c3c815e3b85d4bff473b0e7188893a9 = $(`<div id="html_9c3c815e3b85d4bff473b0e7188893a9" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2837-4 Most cez rieku Muráňka pred obcou Licince (532008-004)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>oceľ -  plnostenná</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1946</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.5391, 20.3024)</td></tr></table></div>`)[0];
+                popup_95460ae6eb40c52ecad9e0f2fdeb1961.setContent(html_9c3c815e3b85d4bff473b0e7188893a9);
+            
+        
+
+        marker_b3b51aa9b8af1278533ccacb9314db50.bindPopup(popup_95460ae6eb40c52ecad9e0f2fdeb1961)
+        ;
+
+        
+    
+    
+            marker_b3b51aa9b8af1278533ccacb9314db50.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M1296</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_465da4649ebb2d0ca70748214f96a345 = L.marker(
+                [48.31872, 19.77301],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_d228537b1ab9cd32938c98b800299051 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_465da4649ebb2d0ca70748214f96a345.setIcon(custom_icon_d228537b1ab9cd32938c98b800299051);
+        
+    
+        var popup_8dbcf967cf764cb0a04126545103a1ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7739bcb36abe7c7107d23c065cb6798c = $(`<div id="html_7739bcb36abe7c7107d23c065cb6798c" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2668-3_Most cez Ipeľ v obci Nitra nad Ipľom (571002-003)</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1956</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.3187, 19.7730)</td></tr></table></div>`)[0];
+                popup_8dbcf967cf764cb0a04126545103a1ff.setContent(html_7739bcb36abe7c7107d23c065cb6798c);
+            
+        
+
+        marker_465da4649ebb2d0ca70748214f96a345.bindPopup(popup_8dbcf967cf764cb0a04126545103a1ff)
+        ;
+
+        
+    
+    
+            marker_465da4649ebb2d0ca70748214f96a345.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M4291</th></tr><tr><td style='text-align:left;'>STS:</td><td>7</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5daca355830db9e3f21a0896a880df03 = L.marker(
+                [48.278813428, 20.116620663],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_197499571b8b69ff85241594d2c76212 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_5daca355830db9e3f21a0896a880df03.setIcon(custom_icon_197499571b8b69ff85241594d2c76212);
+        
+    
+        var popup_cd55024aae1f329ba714bad705a48ab9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c0f32435da9e1fb5171d4eb72528172 = $(`<div id="html_8c0f32435da9e1fb5171d4eb72528172" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2791-1 (571025-001) Most cez rieku Rimava za obcou Šimonovce</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>dosková</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1969</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.2788, 20.1166)</td></tr></table></div>`)[0];
+                popup_cd55024aae1f329ba714bad705a48ab9.setContent(html_8c0f32435da9e1fb5171d4eb72528172);
+            
+        
+
+        marker_5daca355830db9e3f21a0896a880df03.bindPopup(popup_cd55024aae1f329ba714bad705a48ab9)
+        ;
+
+        
+    
+    
+            marker_5daca355830db9e3f21a0896a880df03.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M3127</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d18613da29db535dba966957d9ff68e = L.marker(
+                [48.29538, 20.19942],
+                {}
+            ).addTo(map_7f6c29c0b6d2e69bb7607f29c9808964);
+        
+    
+        var custom_icon_a774e5c383ab7618b10c10b0acb21104 = L.icon({"iconAnchor": [20.0, 40], "iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/Medvedku/Assets/cee766454a39d9e86e58fb8d83965a6338c5de37/markers/bridge_marker_Cartodb.svg"});
+        marker_7d18613da29db535dba966957d9ff68e.setIcon(custom_icon_a774e5c383ab7618b10c10b0acb21104);
+        
+    
+        var popup_b9da6e61d9243df82eeea1e40b16c9ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38baaa17b64cdb9e5f2aa409155260f2 = $(`<div id="html_38baaa17b64cdb9e5f2aa409155260f2" style="width: 100.0%; height: 100.0%;"><table style='width:400px;'><tr><th style='text-align:left;'>Názov mosta:</th><td>2796-1 (571030-001) Most cez rieku Rimava pred obcou Chrámec</td></tr><tr><th style='text-align:left;'>Trieda PK:</th><td>cesta III. triedy</td></tr><tr><th style='text-align:left;'>Druh konštrukcie:</th><td>trámová</td></tr><tr><th style='text-align:left;'>Materiál:</th><td>prefabrikovaný predpätý betón</td></tr><tr><th style='text-align:left;'>Rok postavenia:</th><td>1959</td></tr><tr><th style='text-align:left;'>GPS Coordinates:</th><td>(48.2954, 20.1994)</td></tr></table></div>`)[0];
+                popup_b9da6e61d9243df82eeea1e40b16c9ef.setContent(html_38baaa17b64cdb9e5f2aa409155260f2);
+            
+        
+
+        marker_7d18613da29db535dba966957d9ff68e.bindPopup(popup_b9da6e61d9243df82eeea1e40b16c9ef)
+        ;
+
+        
+    
+    
+            marker_7d18613da29db535dba966957d9ff68e.bindTooltip(
+                `<div>
+                     <table style='width:50px;'><tr><th colspan='2' style='text-align:left;'>Most M845</th></tr><tr><td style='text-align:left;'>STS:</td><td>6</td></tr></table>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
